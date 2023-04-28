@@ -32,6 +32,7 @@
 #nav > li + li{margin-top:29.5px;padding-top:29.5px;border-top:1px solid #dee0e5;}
 #nav > li > .nav_fd{display:block;font-weight:600;}
 #nav > li > .nav_fd:hover{color:#222;}
+#nav > li > a{font-size:16px;color:#222;}
 #nav > li > a .icon{margin-right:10px;}
 #nav > li > ul{}
 #nav > li > ul > li:first-child{margin-top:25px;}
@@ -57,7 +58,7 @@
 .history .item:last-child a{font-weight:500;}
 
 #content{}
-#content h2{margin-top:13px;margin-bottom:28px;}
+#content .page_title{margin-top:13px;margin-bottom:28px;}
 
 #footer{border-top:1px solid #dee0e5;padding:40px 0 39px;}
 #footer .ft_copy{text-align:center;color:#686a7a;line-height:20px;}

@@ -1,19 +1,3 @@
-//전체메뉴 컨트롤
-const navAllBtn = document.querySelector('.nav_all');
-const nav = document.querySelector('#nav');
-navAllBtn.addEventListener('click', function () {
-	nav.classList.toggle('active');
-	navAllBtn.classList.toggle('active');
-});
-const body = document.querySelector('body');
-body.addEventListener('click', function (event) {
-	if (event.target.closest('.hd_bottom') || event.target.closest('#nav') || event.target.closest('.nav_all')) {
-		return;
-	}
-	nav.classList.remove('active');
-	navAllBtn.classList.remove('active');
-});
-
 //tap box 컨트롤
 function showTab(btn) {
 	let index = Array.prototype.indexOf.call(btn.parentNode.children, btn);
@@ -283,3 +267,54 @@ function layerToggle(elm , display){
 	}
 }
 
+//토글버튼
+let toggleButtons = document.querySelectorAll('.toggle_btn');
+toggleButtons.forEach(function(btn) {
+	btn.addEventListener('click', function() {
+		if (this.disabled || this.classList.contains('disabled')) {
+			return;
+		}
+		this.classList.toggle('active');
+	});
+});
+
+
+//셀렉트박스 커스텀
+$('.selected').click(function(e) {
+	e.stopPropagation();
+	let status = false;
+	let $parent = $(this).parent('.select_custom');
+	if($(this).parent('.select_custom').hasClass('active')){
+		status = true;
+	}
+	$('.select_custom').removeClass('active');
+	if(status){
+		$(this).parent('.select_custom').removeClass('active');
+	}else{
+		$(this).parent('.select_custom').toggleClass('active');
+	}
+	let dropdownTop = $parent.offset().top + $parent.outerHeight(true);
+	let dropdownHeight = $parent.find('.options').outerHeight(true);
+	let windowBottom = $(window).scrollTop() + $(window).height();
+
+	if (windowBottom < dropdownTop + dropdownHeight) {
+		$parent.addClass('up');
+	} else {
+		$parent.removeClass('up');
+	}
+});
+
+$(document).click(function() {
+	$('.select_custom').removeClass('active up');
+});
+
+$('.option').click(function(e) {
+	e.stopPropagation();
+	let selectedText = $(this).text();
+	$(this).parent('.options').siblings('.selected').text(selectedText);
+	$(this).parent('.options').siblings('input').val(selectedText);
+	$(this).siblings('.option').removeClass('active');
+	$(this).addClass('active');
+	$(this).closest('.select_custom').removeClass('active up');
+	$(this).closest('.select_custom').addClass('wrote');
+});

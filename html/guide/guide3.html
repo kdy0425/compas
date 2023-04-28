@@ -150,7 +150,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- //header -->
+	<!-- //header -->	
 
 	<div class="ac_wrap">
 		<div class="aside">
@@ -279,103 +279,274 @@
 					<h2 class="page_title">Style Guide for Web Design</h2>
 
 					<div class="flex_btn">
-						<a href="./guide1.html" class="active">color, text</a>
+						<a href="./guide1.html">color, text</a>
 						<a href="./guide2.html">button</a>
-						<a href="./guide3.html">form</a>
+						<a href="./guide3.html" class="active">form</a>
 						<a href="./guide4.html">tap, table, etc</a>
 						<a href="./guide5.html">popup</a>
 						<a href="./guide6.html">table</a>
 					</div>
 
-					<div class="guide_box btn_color">
-						<h4 class="title">버튼 기본컬러</h4>
+					<div class="guide_box">
+						<h4 class="title">Input Field</h4>
 						<div class="cnt">
-							<button type="button" class="btn primary1">버튼 #3C4DE2</button>
-							<button type="button" class="btn primary2">버튼 #272848</button>
-							<button type="button" class="btn primary3">버튼 #F54E41</button>
-							<button type="button" class="btn secondary1">버튼 #4785F1</button>
-							<button type="button" class="btn secondary2">버튼 #2DC5AB</button>
-							<button type="button" class="btn secondary3">버튼 #835FEB</button>
-							<button type="button" class="btn secondary4">버튼 #DC9B18</button>
-						</div>
-					</div>
+							<div class="inputs">
+                                <div class="ip_item">
+                                    <div class="ip_tit">Default</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
 
-					<div class="guide_box text_color">
-						<h4 class="title">폰트 기본컬러</h4>
-						<div class="cnt">
-							<div class="text primary1">폰트 #3C4DE2</div>
-							<div class="text primary2">폰트 #272848</div>
-							<div class="text primary3">폰트 #F54E41</div>
-							<div class="text secondary1">폰트 #4785F1</div>
-							<div class="text secondary2">폰트 #2DC5AB</div>
-							<div class="text secondary3">폰트 #835FEB</div>
-							<div class="text secondary4">폰트 #DC9B18</div>
-						</div>
-					</div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Disabled</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <input type="text" value="텍스트" disabled>
+                                        </div>
+                                    </div>
+                                </div>
 
-					<div class="guide_box text_color">
-						<h4 class="title">상태 고정컬러</h4>
-						<div class="cnt">
-							<div class="text error">error #3C4DE2(부정 메시지, 긴급, 오류)</div>
-							<div class="text ok">ok #272848(긍정 메시지, 사용가능, 승인)</div>
-						</div>
-					</div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Error</div>
+                                    <div class="ip_group error">
+                                        <div class="ip">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="ip_status">에러 메시지가 노출되는 영역</div>
+                                </div>
 
-					<div class="guide_box text_color">
-						<h4 class="title">폰트컬러</h4>
-						<div class="cnt">
-							<div class="text color1">폰트컬러 #222</div>
-							<div class="text color2">폰트컬러 #686A7A</div>
-							<div class="text color3">폰트컬러 #9B9CA4</div>
-						</div>
-					</div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Success</div>
+                                    <div class="ip_group ok">
+                                        <div class="ip">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="ip_status">긍정 메시지가 노출되는 영역</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="guide_box btn_color">
-						<h4 class="title">라인컬러</h4>
+                    <div class="guide_box">
+						<h4 class="title">Input Size (Large / Login)</h4>
 						<div class="cnt">
-							<button type="button" class="line1">라인컬러 #DEE0E5</button>
-							<button type="button" class="line2">라인컬러 #E9E9E9</button>
-							<button type="button" class="line3">라인컬러 #D8DBE5</button>
-							<button type="button" class="line4">라인컬러 #CCCCCC</button>
-						</div>
-					</div>
+							<div class="ip_row" style="width:378px;">
+                                <div class="ip_item">
+                                    <div class="ip_tit">ID</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <input type="text" class="lg">
+                                        </div>
+                                    </div>
+                                </div>
 
-					<div class="guide_box text_type">
-						<h4 class="title">문자</h4>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Password</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <input type="password" class="lg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide_box">
+						<h4 class="title">Input Size (Medium)</h4>
 						<div class="cnt">
-							<h2>h2 ExtraBold, 34px, Line-height 42</h2>
-							<h3>h3 ExtraBold, 30px, Line-height 38</h3>
-							<h4>h4 ExtraBold, 24px, Line-height 32</h4>
-							<div class="text1">
-								text text1
-								Bold, 14px, Line-height 22
-								기본폰트, 본문, 테이블, 리스트, Input 등
-							</div>
-							<div class="text2">
-								text text2
-								ExtraBold, 14px, Line-height 22
-								강조폰트
-							</div>
-							<div class="text3">
-								text text3
-								ExtraBold, 14px, Line-height 22
-								강조폰트, Table th, Label
-							</div>
-							<div class="te text4">
-								text text4
-								Bold, 14px, Line-height 22
-								분문
-							</div>
-							<div class="text5">
-								text text5
-								Bold, 13px, Line-height 21
-								보조텍스트
-							</div>
-						</div>
-					</div>
+							<div class="inputs">
+                                <div class="ip_item">
+                                    <div class="ip_tit">Mediums</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide_box">
+						<h4 class="title">Dropdown 브라우저 기본기능</h4>
+						<div class="cnt">
+							<div class="inputs">
+                                <div class="ip_item">
+                                    <div class="ip_tit">default</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <select name="" id="">
+                                                <option value="">텍스트</option>
+                                                <option value="">텍스트</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Disabled</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <select name="" id="" disabled>
+                                                <option value="">텍스트</option>
+                                                <option value="">텍스트</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide_box">
+						<h4 class="title">Dropdown 커스텀</h4>
+						<div class="cnt">
+							<div class="inputs">
+                                <div class="ip_item">
+                                    <div class="ip_tit">Ready</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <div class="select_custom">
+                                                <input type="hidden">
+                                                <a href="javascript:;" class="selected">텍스트</a>
+                                                <div class="options">
+                                                    <a href="javascript:;" class="option">Option1</a>
+                                                    <a href="javascript:;" class="option">Option2</a>
+                                                    <a href="javascript:;" class="option">Option3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Select</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <div class="select_custom wrote">
+                                                <input type="hidden">
+                                                <a href="javascript:;" class="selected">Option1</a>
+                                                <div class="options">
+                                                    <a href="javascript:;" class="option active">Option1</a>
+                                                    <a href="javascript:;" class="option">Option2</a>
+                                                    <a href="javascript:;" class="option">Option3</a>
+                                                    <a href="javascript:;" class="option">Option4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">default</div>
+                                    <div class="ip_group">
+                                        <div class="ip">
+                                            <div class="select_custom disabled">
+                                                <input type="hidden">
+                                                <a href="javascript:;" class="selected">텍스트</a>
+                                                <div class="options">
+                                                    <a href="javascript:;" class="option">Option1</a>
+                                                    <a href="javascript:;" class="option">Option2</a>
+                                                    <a href="javascript:;" class="option">Option3</a>
+                                                    <a href="javascript:;" class="option">Option4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide_box">
+						<h4 class="title">Check Box</h4>
+						<div class="cnt">
+							<div class="inputs">
+                                <div class="ip_item">
+                                    <div class="ip_tit">Single</div>
+                                    <label class="checkbox single">
+                                        <input type="checkbox"><span class="ck_icon"></span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Default</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox"><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Checked</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" checked><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Disabled Unchecked</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" disabled><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Disabled Checked</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" checked disabled><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide_box">
+						<h4 class="title">Radio Button</h4>
+						<div class="cnt">
+							<div class="inputs">
+                                <div class="ip_item">
+                                    <div class="ip_tit">Single</div>
+                                    <label class="checkbox single">
+                                        <input type="radio"><span class="ck_icon"></span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Default</div>
+                                    <label class="checkbox">
+                                        <input type="radio"><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Checked</div>
+                                    <label class="checkbox">
+                                        <input type="radio" checked><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Disabled Unchecked</div>
+                                    <label class="checkbox">
+                                        <input type="radio" disabled><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                                <div class="ip_item">
+                                    <div class="ip_tit">Disabled Checked</div>
+                                    <label class="checkbox">
+                                        <input type="radio" checked disabled><span class="ck_icon"></span>
+                                        <span class="ck_text">텍스트</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 				</div>
-				<!-- //content -->
+                <!-- //content -->
 			</div>
 
 			<div id="footer">
