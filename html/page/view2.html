@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1290"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>COMPAS</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<h1 id="header_h1">COMPAS</h1>
+<div id="skip_to_container">
+	<!-- skip navigation -->
+	<a href="#content">내용 바로가기</a>
+	<a href="#nav">서비스메뉴 바로가기</a>
+</div>
+<hr class="hide" />	
+
+<!-- wrap -->
+<div id="layout">
+	<!-- header -->
+	<div id="header">
+		<div class="l">
+			<div class="logo">
+				<a href="javascript:;">
+					<svg xmlns="http://www.w3.org/2000/svg" width="171" height="26" viewBox="0 0 171 26">
+						<path data-name="패스 1" d="M216.041 393.97v2.417h-5.129a.257.257 0 0 0-.25.264v12.483h-3.28v-12.483a.258.258 0 0 0-.251-.264h-5.15v-2.417z" transform="translate(-171.842 -386.488)" style="fill:#0056a5"/>
+						<path data-name="패스 2" d="M249.558 393.97v15.164H246.3V393.97z" transform="translate(-184.771 -386.488)" style="fill:#0056a5"/>
+						<g data-name="그룹 1">
+							<path data-name="패스 3" d="M263.719 393.677a7.8 7.8 0 1 0-.067 15.582c4.769 0 8.365-3.34 8.365-7.769a7.98 7.98 0 0 0-8.298-7.813zm.022 12.669a4.508 4.508 0 0 1-4.722-4.787 4.7 4.7 0 1 1 9.4.021 4.569 4.569 0 0 1-4.678 4.766z" transform="translate(-187.433 -386.402)" style="fill:#0056a5"/>
+						</g>
+						<g data-name="그룹 2">
+							<path data-name="패스 4" d="M335.109 393.677a7.8 7.8 0 1 0-.066 15.582c4.77 0 8.365-3.34 8.365-7.769a7.981 7.981 0 0 0-8.299-7.813zm.023 12.669a4.508 4.508 0 0 1-4.723-4.787 4.7 4.7 0 1 1 9.4.021 4.57 4.57 0 0 1-4.677 4.766z" transform="translate(-208.261 -386.402)" style="fill:#767d8d"/>
+						</g>
+						<path data-name="패스 5" d="M297.661 393.97v15.164h-2.742l-8.168-9.622a.243.243 0 0 0-.278-.07.264.264 0 0 0-.161.247v9.445h-3.192V393.97h3.027l7.908 9.163a.242.242 0 0 0 .276.069.264.264 0 0 0 .161-.246v-8.986z" transform="translate(-195.513 -386.488)" style="fill:#0056a5"/>
+						<path data-name="패스 6" d="M316.289 405.15c0-1.03-.766-1.5-2.183-2.023l-.8-.3-2.434-1.108a5.027 5.027 0 0 1-1.336-1.1 4.436 4.436 0 0 1-.918-2.747c0-2.551 2.115-4.2 5.391-4.2a11.121 11.121 0 0 1 4.8 1.142v2.618a10.069 10.069 0 0 0-4.563-1.367c-1.506 0-2.48.6-2.48 1.531 0 .8.774 1.434 2.594 2.113l1.175.46c2.768 1.042 3.948 2.448 3.948 4.7 0 2.623-2.245 4.386-5.586 4.386a9.886 9.886 0 0 1-3.847-.836c-.072-.03-.912-.453-1.171-.584v-2.755a12.15 12.15 0 0 0 2.064 1.14 6.931 6.931 0 0 0 2.844.615c2.177.004 2.502-1.055 2.502-1.685z" transform="translate(-202.951 -386.402)" style="fill:#767d8d"/>
+						<path data-name="패스 7" d="M364.161 393.97v2.441H357.9a.258.258 0 0 0-.252.263v3.313a.259.259 0 0 0 .252.265h6.264v2.441H357.9a.259.259 0 0 0-.252.265v6.177h-3.256V393.97z" transform="translate(-216.306 -386.488)" style="fill:#767d8d"/>
+						<path data-name="패스 8" d="M385.489 393.97v2.417h-5.128a.259.259 0 0 0-.252.264v12.483h-3.279v-12.483a.259.259 0 0 0-.251-.264h-5.151v-2.417z" transform="translate(-221.277 -386.488)" style="fill:#767d8d"/>
+						<g data-name="그룹 6">
+							<path data-name="패스 14" d="m237.258 408.383-.456-1.057-.4-.877-.591-1.336a5.381 5.381 0 0 0-2.028-2.819.267.267 0 0 1-.125-.232v-.009a.3.3 0 0 1 .134-.235s1.227-.785 1.23-.785a3.866 3.866 0 0 0 1.182-2.817 4.346 4.346 0 0 0-1.827-3.5c-.923-.6-1.664-.743-3.784-.743h-5.476v15.164h3.259V403a.258.258 0 0 1 .251-.264h.547l1.141.1c.788.232 1.55 1.151 2.15 2.584l.568 1.333.438 1.019c.002.006.283.714.28.7l.277.626a.173.173 0 0 1 .014.025h3.558c-.107-.223-.339-.738-.342-.74zm-6.333-8.28-.458.022-.283.023h-1.554v-3.588h1.882c1.376 0 2.077.6 2.077 1.793a1.653 1.653 0 0 1-1.664 1.747z" transform="translate(-178.593 -386.488)" style="fill:#0056a5"/>
+						</g>
+						<g data-name="그룹 7">
+							<path data-name="패스 15" d="M397.118 395.4a1.519 1.519 0 0 1-2.094 0 1.33 1.33 0 0 1-.45-1 1.316 1.316 0 0 1 .453-1 1.517 1.517 0 0 1 2.1 0 1.341 1.341 0 0 1 0 2zm.125-2.128a1.692 1.692 0 0 0-2.341 0 1.517 1.517 0 0 0 0 2.25 1.672 1.672 0 0 0 1.169.467 1.652 1.652 0 0 0 1.169-.47 1.514 1.514 0 0 0 0-2.247zm-1 .268a.551.551 0 0 1 .305.094.338.338 0 0 1 .174.293.361.361 0 0 1-.139.3.564.564 0 0 1-.365.11h-.615v-.8zm-.853 1.882h.213v-.916h.71l.4.914h.251l-.432-.951a.7.7 0 0 0 .261-.145.517.517 0 0 0 .156-.405.492.492 0 0 0-.177-.37.737.737 0 0 0-.511-.178h-.868z" transform="translate(-227.98 -386.147)" style="fill:#767d8d"/>
+							<path data-name="패스 16" d="M395.05 393.42a1.357 1.357 0 0 0-.466 1.031 1.374 1.374 0 0 0 .46 1.032 1.558 1.558 0 0 0 2.155 0 1.378 1.378 0 0 0 .006-2.063 1.564 1.564 0 0 0-2.155 0zm.055 2a1.293 1.293 0 0 1 0-1.939 1.478 1.478 0 0 1 2.038 0 1.291 1.291 0 0 1-.006 1.939 1.467 1.467 0 0 1-2.035 0zm2.094.062z" transform="translate(-228.033 -386.201)" style="fill:#767d8d"/>
+							<path data-name="패스 17" d="M394.857 393.223a1.558 1.558 0 0 0 0 2.312 1.708 1.708 0 0 0 1.2.478 1.692 1.692 0 0 0 1.2-.48 1.554 1.554 0 0 0 0-2.31 1.731 1.731 0 0 0-2.4 0zm.061 2.248a1.472 1.472 0 0 1 0-2.186 1.646 1.646 0 0 1 2.281 0 1.465 1.465 0 0 1 0 2.184 1.642 1.642 0 0 1-2.276 0zm2.335-2.248z" transform="translate(-227.963 -386.129)" style="fill:#767d8d"/>
+							<path data-name="패스 18" d="m396.082 393.783-.045.838.66.042.391-.117a.408.408 0 0 0 .155-.334.373.373 0 0 0-.195-.329l-.327-.1zm.044.043.6.043.28.085a.3.3 0 0 1 .156.259.319.319 0 0 1-.122.266l-.337.1h-.615z" transform="translate(-228.457 -386.433)" style="fill:#767d8d"/>
+							<path data-name="패스 19" d="m395.782 393.544-.042 2.094a.045.045 0 0 0 .042.044h.213l.044-.96.666.042c0 .056.359.884.359.884l.29.027v-.013a8.086 8.086 0 0 0-.39-.987c.032.014.245-.1.245-.1l.169-.438-.19-.4a.775.775 0 0 0-.54-.19zm.043.042.825.045a.7.7 0 0 1 .482.166l.162.338-.142.374-.248.137a9.267 9.267 0 0 0 .408 1.005l-.209-.06c0-.058-.361-.885-.361-.885l-.748-.028-.045.96-.125-.033z" transform="translate(-228.37 -386.363)" style="fill:#767d8d"/>
+						</g>
+						<g>
+							<g data-name="그룹 3">
+								<path data-name="패스 9" d="M167.375 398.775a6.992 6.992 0 1 0 12.562 0 6.986 6.986 0 1 0-6.281-10.828 6.987 6.987 0 1 0-6.282 10.828z" transform="translate(-159.84 -383.818)" style="fill:#0056a5"/>
+							</g>
+							<g data-name="그룹 4">
+								<path data-name="패스 10" d="M175.353 392.188c-4.881-6.194-10.516-3.863-10.516-3.863s6.1-4.194 12.315 4.04a5.381 5.381 0 0 1 .931 2.562" transform="translate(-161.006 -384.53)" style="fill:#fff"/>
+								<path data-name="패스 11" d="M181.5 399.16s7.843.234 9.02-6.447c0 0 .844 8.078-10.03 7.768h-1.554" transform="translate(-165.119 -386.122)" style="fill:#fff"/>
+								<path data-name="패스 12" d="M173.921 400.464s-3.728 7.457.7 10.175c0 0-6.137-2.406-1.629-10.93l.465-1.729" transform="translate(-162.903 -387.658)" style="fill:#fff"/>
+							</g>
+							<path data-name="패스 13" d="M174.219 397.589a3.34 3.34 0 1 1 3.34 3.34 3.34 3.34 0 0 1-3.34-3.34z" transform="translate(-163.743 -386.569)" style="fill:#fff"/>
+						</g>
+					</svg>
+					<span class="sound_only">트라이언소프트</span>
+				</a>
+			</div>
+		</div>
+		<div class="r">
+			<div class="hd_links">
+				<a href="javascript:;" class="mem">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g transform="translate(1 1)">
+								<path d="M1 22.091A9.091 9.091 0 0 1 10.091 13h1.818A9.091 9.091 0 0 1 21 22.091" transform="translate(0 -1.091)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+								<circle cx="5.455" cy="5.455" r="5.455" transform="translate(5.545 1)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+							</g>
+						</svg>
+					</span>
+					<span class="sound_only">개인정보수정</span>
+				</a>
+				<a href="javascript:;" class="home">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24.814" height="24" viewBox="0 0 24.814 24">
+							<path d="M0 0h24v24H0z" style="fill:none" transform="translate(.407)"/>
+							<g >
+								<path d="m1 11 11-9 11 9" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none" transform="translate(.407 -1)"/>
+								<path d="M10 23v-6h4v6" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none" transform="translate(.407 -1)"/>
+								<path d="M4 13v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none" transform="translate(.407 -1)"/>
+							</g>
+						</svg>
+					</span>
+					<span class="sound_only">홈</span>
+				</a>
+				<a href="javascript:;" class="ala">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24.001" height="24" viewBox="0 0 24.001 24">
+							<g data-name="ico notice on">
+								<path d="M0 0h24v24H0z" style="fill:none"/>
+								<path d="M669.239 373.008h24v24h-24z" style="fill:none" transform="translate(-669.238 -373.008)"/>
+								<g >
+									<path d="M682.467 375.115a7.093 7.093 0 0 0-1.228-.107 7 7 0 0 0-7 7v4a13.834 13.834 0 0 1-2 7h18a13.833 13.833 0 0 1-2-7v-2.091" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" transform="translate(-669.238 -373.008)"/>
+									<path d="M678.413 395.008a3 3 0 0 0 5.652 0z" style="fill:#222" transform="translate(-669.238 -373.008)"/>
+								</g>
+								<g transform="translate(-669.238 -373.008)">
+									<circle cx="4" cy="4" r="4" transform="translate(685.239 373.008)" style="fill:#f54e41"/>
+								</g>
+							</g>
+						</svg>
+
+						<!-- 알림 없을 때 -->
+						<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M0 0h24v24H0z" style="fill:none"/>
+							<g data-name="그룹 27">
+								<path data-name="패스 56" d="M19 13V9A7 7 0 1 0 5 9v4a13.834 13.834 0 0 1-2 7h18a13.834 13.834 0 0 1-2-7z" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+								<path data-name="패스 57" d="M9.174 22a3 3 0 0 0 5.652 0z" style="fill:#222"/>
+							</g>
+						</svg> -->
+					</span>
+					<span class="sound_only">알림</span>
+				</a>
+			</div>
+			<div class="hd_lnb">
+				<span class="mb_name"><strong>안녕하세요!</strong> 홍길동님</span>
+				<div class="logout">
+					<a href="javascript:;" class="btn">
+						로그아웃
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M0 0h24v24H0z" style="fill:none"/>
+								<g >
+									<path d="M22.363 20.293A8.679 8.679 0 0 1 17.1 22a9 9 0 1 1 5.48-16.111" transform="translate(-6.1 -1)" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+									<path transform="translate(10 12)" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none" d="M0 0h12"/>
+									<path d="m2 15 3-3-3-3" transform="translate(17)" style="stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;fill:none"/>
+								</g>
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<div class="ac_wrap">
+		<div class="aside">
+			<ul id="nav">
+				<li>
+					<a href="javascript:;" class="nav_fd">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g transform="translate(2 2)">
+									<path transform="translate(4.545)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0v1.818"/>
+									<path transform="translate(15.455)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0v1.818"/>
+									<path d="m8.5 14.727 1.818 1.818L14.864 12" transform="translate(-1.682 -2)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<path transform="translate(0 7)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h20"/>
+									<rect width="20" height="16.364" rx="2" transform="translate(0 2.727)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+								</g>
+							</svg>
+						</span>프로젝트
+					</a>
+					<ul>
+						<li><a href="javascript:;">프로젝트 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="nav_fd">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g transform="translate(2 2)">
+									<path d="M18.57 20.014v-.677a2.727 2.727 0 0 0-1.37-2.368l-2.926-1.675" transform="translate(-2.206 -2.299)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<path d="m9.3 15.292-2.925 1.676A2.727 2.727 0 0 0 5 19.337v.677" transform="translate(-1.364 -2.299)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<path d="M11.636 15.091h0A3.637 3.637 0 0 1 8 11.455V9.636A3.637 3.637 0 0 1 11.636 6h0a3.637 3.637 0 0 1 3.636 3.636v1.818a3.637 3.637 0 0 1-3.636 3.637z" transform="translate(-1.636 -1.455)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<circle cx="10" cy="10" r="10" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+								</g>
+							</svg>
+						</span>My Page
+					</a>
+					<ul>
+						<li class="active"><a href="javascript:;">프로필 관리</a></li>
+						<li><a href="javascript:;">내 정보 수정</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="nav_fd">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g>
+									<path d="M1 19.818v2.727h10.909V20.2a2.209 2.209 0 0 1 2.273-2.2H2.818A1.818 1.818 0 0 0 1 19.818z" transform="translate(1 -.545)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<path d="M14.727 16.455A2.21 2.21 0 0 1 17 18.727 2.272 2.272 0 0 0 19.273 21h0a2.272 2.272 0 0 0 2.273-2.273V1H7v15.455" transform="translate(.455 1)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<path transform="translate(12 7.455)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h5.455"/>
+									<path transform="translate(12 12)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h5.455"/>
+								</g>
+							</svg>
+						</span>거래처
+					</a>
+					<ul>
+						<li><a href="javascript:;">거래처 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="nav_fd">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g data-name="그룹 94" transform="translate(2 4)">
+									<path data-name="패스 38" d="M3 12.091V4.818A1.818 1.818 0 0 1 4.818 3h12.727a1.818 1.818 0 0 1 1.818 1.818v7.273" transform="translate(-1.182 -3)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<circle data-name="타원 3" cx=".909" cy=".909" r=".909" transform="translate(9.091 2.727)" style="fill:#222"/>
+									<path data-name="패스 39" d="M21 17a3.636 3.636 0 0 1-3.636 3.636H4.636A3.636 3.636 0 0 1 1 17z" transform="translate(-1 -4.273)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+								</g>
+							</svg>
+						</span>게시판
+					</a>
+					<ul>
+						<li><a href="javascript:;">소통 게시판</a></li>
+						<li><a href="javascript:;">업무보고 게시판</a></li>
+						<li><a href="javascript:;">공지사항</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="nav_fd">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g transform="translate(2 3.818)">
+									<path transform="translate(16.207 10.753)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M3.793 3.793 0 0"/>
+									<path transform="translate(0 5.455)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M6.364 0H0"/>
+									<path transform="translate(0 10.909)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M6.364 0H0"/>
+									<path transform="translate(0 16.364)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M13.636 0H0"/>
+									<path style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M13.636 0H0"/>
+									<circle cx="3.636" cy="3.636" r="3.636" transform="translate(10 4.545)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+								</g>
+							</svg>
+						</span>관리
+					</a>
+					<ul>
+						<li><a href="javascript:;">거래처별 프로젝트 관리</a></li>
+						<li><a href="javascript:;">개발 인력 관리</a></li>
+						<li><a href="javascript:;">회원 정보 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="nav_fd">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g>
+									<path transform="translate(23 11)" style="fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0v5"/>
+									<path d="M12 13 2 8l10-5 10 5z" style="stroke-linejoin:round;fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+									<path d="M5 9.5V18c0 1.657 3.134 3 7 3s7-1.343 7-3V9.5" style="stroke-linejoin:round;fill:none;stroke:#222;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+								</g>
+							</svg>
+						</span>교육
+					</a>
+					<ul>
+						<li><a href="javascript:;">교육 관리</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="content_wrap">
+			<div class="content">
+				<div class="history">
+					<div class="item"><a href="javascript:;" class="home">홈</a></div>
+					<div class="item"><a href="javascript:;">1depth</a></div>
+					<div class="item"><a href="javascript:;">2depth</a></div>
+				</div>
+
+				<!-- content -->
+				<div id="content" class="bv_page">
+					<h2 class="page_title">소통게시판 </h2>
+                    <div class="box_white">
+                        <div class="bv_wrap">
+                            <div class="bv_title">
+                                <div class="title">
+                                    나혼자산다<button type="button" class="favorite" onclick="$(this).toggleClass('active')">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                <g data-name="그룹 847">
+                                                    <path data-name="패스 1424" d="m16 2.49 4.326 8.764L30 12.66l-7 6.824 1.652 9.635L16 24.571l-8.652 4.547L9 19.483 2 12.66l9.674-1.406z" transform="translate(0 -.49)" style="fill:none;stroke:#ccc;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px"/>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span class="sound_only">즐겨찾기 추가</span>
+                                    </button>
+                                </div>
+                                <div class="r">
+                                    <button type="button" class="btn type2 xl">목록</button>
+                                </div>
+                            </div>
+                            <div class="bv_table">
+                                <div class="bv_subject">게시글 제목 게시글 제목 게시글 제목 게시글 제목</div>
+                               <table>
+                                <colgroup>
+                                    <col style="width:160px;">
+                                    <col style="width:calc((100% - 480px) / 3);">
+                                    <col style="width:160px;">
+                                    <col style="width:calc((100% - 480px) / 3);">
+                                    <col style="width:160px;">
+                                    <col style="width:calc((100% - 480px) / 3);">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>등록자</th>
+                                        <td>운영자</td>
+                                        <th>등록일</th>
+                                        <td>2023.04.19</td>
+                                        <th>조회수</th>
+                                        <td>200</td>
+                                    </tr>
+                                </tbody>
+                               </table>
+                            </div>
+                            <div class="bv_cnt">
+                                글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 <br/><br/>
+
+                                글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 <br/><br/>
+
+                                글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용 글내용
+                            </div>
+                            <div class="bv_table bt0">
+                               <table>
+                                <colgroup>
+                                    <col style="width:160px;">
+                                    <col style="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td>
+                                            <div class="sel_files">
+                                                <div class="file"><span class="name">추가된 파일명.jpeg</span><button type="button" class="remove_file">삭제</button></div>
+                                                <div class="file"><span class="name">추가된 파일명.png</span><button type="button" class="remove_file">삭제</button></div>
+                                                <div class="file"><span class="name">추가된 파일명.xlsx</span><button type="button" class="remove_file">삭제</button></div>
+                                                <div class="file"><span class="name">추가된 파일명.xlsx</span><button type="button" class="remove_file">삭제</button></div>
+                                            </div> 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                               </table>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="reply_wrap inner_reply">
+                            <div class="reply_title">답글 <strong>5</strong>개</div>
+                            <div id="reply_main" class="reply_form">
+                                <form action="">
+                                    <div class="rf_box">
+                                        <textarea name="" placeholder="답글 내용을 입력하세요."></textarea>
+                                        <button type="button">등록</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="reply_list">
+
+                                <div class="reply_item">
+                                    <div class="reply_area">
+                                        <div class="reply_or">
+                                            <div class="info">
+                                                <div class="l">
+                                                    <div class="name">사용자아이디</div>
+                                                    <div class="date">2023.04.20 13:25</div>
+                                                </div>
+                                                <div class="r">
+                                                    <div class="action">
+                                                        <button type="button" class="btn_action">
+                                                            <span class="icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                                                    <g data-name="그룹 838" transform="translate(11.778 12.278)">
+                                                                        <circle data-name="타원 83" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 -3.277)" style="fill:#222"/>
+                                                                        <circle data-name="타원 84" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 3.723)" style="fill:#222"/>
+                                                                        <circle data-name="타원 85" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 10.723)" style="fill:#222"/>
+                                                                    </g>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="sound_only">수정,삭제하기</span>
+                                                        </button>
+                                                        <div class="reply_event">
+                                                            <a href="javascript:;">수정</a>
+                                                            <a href="javascript:;">삭제</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cnt">
+                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                            </div>
+                                            <div class="sr_btns">
+                                                <div class="item">
+                                                    <button type="button" class="btn_reply_write">댓글쓰기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sub_reply">
+                                            <div class="sr_form">
+                                                <div class="reply_form" style="display:none;">
+                                                    <form action="">
+                                                        <div class="rf_box">
+                                                            <textarea name="" placeholder="답글 내용을 입력하세요."></textarea>
+                                                            <button type="button">등록</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="reply_list sub_reply_list">
+                                                    <div class="reply_item">
+                                                        <div class="reply_area">
+                                                            <div class="info">
+                                                                <div class="l">
+                                                                    <div class="name">사용자아이디</div>
+                                                                    <div class="date">2023.04.20 13:25</div>
+                                                                    <span class="writer">작성자</span>
+                                                                </div>
+                                                                <div class="r">
+                                                                    <div class="action">
+                                                                        <button type="button" class="btn_action">
+                                                                            <span class="icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                                                                    <g data-name="그룹 838" transform="translate(11.778 12.278)">
+                                                                                        <circle data-name="타원 83" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 -3.277)" style="fill:#222"/>
+                                                                                        <circle data-name="타원 84" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 3.723)" style="fill:#222"/>
+                                                                                        <circle data-name="타원 85" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 10.723)" style="fill:#222"/>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="sound_only">수정,삭제하기</span>
+                                                                        </button>
+                                                                        <div class="reply_event">
+                                                                            <a href="javascript:;">수정</a>
+                                                                            <a href="javascript:;">삭제</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cnt">
+                                                            답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reply_item">
+                                                        <div class="reply_area">
+                                                            <div class="info">
+                                                                <div class="l">
+                                                                    <div class="name">사용자아이디</div>
+                                                                    <div class="date">2023.04.20 13:25</div>
+                                                                    <span class="new">
+                                                                        <span class="icon">
+                                                                            <span class="sound_only">NEW</span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                                <rect data-name="사각형 25" width="18" height="18" rx="9" style="fill:#f54e41"></rect>
+                                                                                <path data-name="패스 1425" d="M2.666-.722H.847L-1.377-5.04-2.2-.722h-1.815l1.319-7h1.819l2.224 4.338.819-4.338h1.819z" transform="translate(9.015 13.222)" style="fill:#fff"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="r">
+                                                                    <div class="action">
+                                                                        <button type="button" class="btn_action">
+                                                                            <span class="icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                                                                    <g data-name="그룹 838" transform="translate(11.778 12.278)">
+                                                                                        <circle data-name="타원 83" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 -3.277)" style="fill:#222"/>
+                                                                                        <circle data-name="타원 84" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 3.723)" style="fill:#222"/>
+                                                                                        <circle data-name="타원 85" cx="1.5" cy="1.5" r="1.5" transform="translate(3.723 10.723)" style="fill:#222"/>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="sound_only">수정,삭제하기</span>
+                                                                        </button>
+                                                                        <div class="reply_event">
+                                                                            <a href="javascript:;">수정</a>
+                                                                            <a href="javascript:;">삭제</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cnt">
+                                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reply_item">
+                                                        <div class="reply_area">
+                                                            <div class="info">
+                                                                <div class="l">
+                                                                    <div class="name">사용자아이디</div>
+                                                                    <div class="date">2023.04.20 13:25</div>
+                                                                </div>
+                                                                <div class="r">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cnt">
+                                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reply_item">
+                                                        <div class="reply_area">
+                                                            <div class="info">
+                                                                <div class="l">
+                                                                    <div class="name">사용자아이디</div>
+                                                                    <div class="date">2023.04.20 13:25</div>
+                                                                </div>
+                                                                <div class="r">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cnt">
+                                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reply_item">
+                                                        <div class="reply_area">
+                                                            <div class="info">
+                                                                <div class="l">
+                                                                    <div class="name">사용자아이디</div>
+                                                                    <div class="date">2023.04.20 13:25</div>
+                                                                </div>
+                                                                <div class="r">
+                                                                </div>
+                                                            </div>
+                                                            <div class="cnt">
+                                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reply_item">
+                                    <div class="reply_area">
+                                        <div class="reply_or">
+                                            <div class="info">
+                                                <div class="l">
+                                                    <div class="name">사용자아이디</div>
+                                                    <div class="date">2023.04.20 13:25</div>
+                                                </div>
+                                                <div class="r">
+                                                </div>
+                                            </div>
+                                            <div class="cnt">
+                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                            </div>
+                                            <div class="sr_btns">
+                                                <div class="item">
+                                                    <button type="button" class="btn_reply_write">댓글쓰기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sub_reply">
+                                            <div class="sr_form">
+                                                <div class="reply_form" style="display:none;">
+                                                    <form action="">
+                                                        <div class="rf_box">
+                                                            <textarea name="" placeholder="답글 내용을 입력하세요."></textarea>
+                                                            <button type="button">등록</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reply_item">
+                                    <div class="reply_area">
+                                        <div class="reply_or">
+                                            <div class="info">
+                                                <div class="l">
+                                                    <div class="name">사용자아이디</div>
+                                                    <div class="date">2023.04.20 13:25</div>
+                                                </div>
+                                                <div class="r">
+                                                </div>
+                                            </div>
+                                            <div class="cnt">
+                                                답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용 답글 내용
+                                            </div>
+                                            <div class="sr_btns">
+                                                <div class="item">
+                                                    <button type="button" class="btn_reply_write">댓글쓰기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sub_reply">
+                                            <div class="sr_form">
+                                                <div class="reply_form" style="display:none;">
+                                                    <form action="">
+                                                        <div class="rf_box">
+                                                            <textarea name="" placeholder="답글 내용을 입력하세요."></textarea>
+                                                            <button type="button">등록</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="paging">
+                                <a href="javascript:;" class="pg_btn first disabled" >
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 839">
+                                                <path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1325.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                                <path data-name="패스 81" d="m1346.906 684.75-4 4 4 4" transform="translate(-1330.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">처음 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg_btn prev disabled">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 840">
+                                                <path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1328.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">이전 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg_btn first" >
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 839">
+                                                <path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1325.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                                <path data-name="패스 81" d="m1346.906 684.75-4 4 4 4" transform="translate(-1330.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">처음 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg_btn prev">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 840">
+                                                <path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1328.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">이전 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg">1</a>
+                                <a href="javascript:;" class="pg">2</a>
+                                <a href="javascript:;" class="pg">3</a>
+                                <a href="javascript:;" class="pg">4</a>
+                                <a href="javascript:;" class="pg active">5</a>
+                                <a href="javascript:;" class="pg">6</a>
+                                <a href="javascript:;" class="pg">7</a>
+                                <a href="javascript:;" class="pg">8</a>
+                                <a href="javascript:;" class="pg">9</a>
+                                <a href="javascript:;" class="pg">10</a>
+                                <span class="dot">...</span>
+                                <a href="javascript:;" class="pg">99</a>
+                                <a href="javascript:;" class="pg_btn next">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 841">
+                                                <path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1326.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">다음 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg_btn end">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 842">
+                                                <path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1329.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                                <path data-name="패스 81" d="m1342.906 684.75 4 4-4 4" transform="translate(-1324.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">끝 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg_btn next disabled">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 841">
+                                                <path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1326.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">다음 페이지</span>
+                                </a>
+                                <a href="javascript:;" class="pg_btn end disabled">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g data-name="그룹 842">
+                                                <path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1329.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                                <path data-name="패스 81" d="m1342.906 684.75 4 4-4 4" transform="translate(-1324.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="sound_only">끝 페이지</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="bv_pn">
+                        <div class="item">
+                            <span class="tit">이전글</span>
+                            <div class="cnt">이전글이 없습니다.</div>
+                        </div>
+                        <div class="item">
+                            <span class="tit">다음글</span>
+                            <div class="cnt"><a href="javascript:;">다음글 제목 다음글 제목 다음글 제목 다음글 제목 다음글 제목 다음글 제목 다음글 제목</a></div>
+                        </div>
+                    </div>
+
+                    <div class="bw_btns">
+                        <div class="l">
+                            <button type="button" class="btn xl type3">수정</button>
+                            <button type="button" class="btn xl type3">삭제</button>
+                        </div>
+                        <div class="r">
+                            <button type="button" class="btn xl type2">목록</button>
+                        </div>
+                    </div>
+
+				</div>
+				<!-- //content -->
+			</div>
+
+			<div id="footer">
+				<div class="ft_copy">Copyright (C) <strong>COMPAS</strong> RIGHTS RESERVED.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+//수정 삭제 토글
+$(".btn_action").click(function(e) {
+    e.stopPropagation(); 
+    $(".reply_event").not($(this).next(".reply_event")).hide();
+    $(this).next(".reply_event").toggle();
+});
+$(document).click(function() {
+    $(".reply_event").hide();
+});
+
+
+//대댓글 보기, 댓글쓰기
+$(".btn_reply_write").click(function(e) {
+    if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).closest('.reply_area').find('.reply_form').hide().removeClass('active');
+        if(!$(this).closest('.sub_reply').find('.btn_reply_status').hasClass('active')){
+            $(this).closest('.sub_reply').find('.sr_form').removeClass('active');
+        }
+    }else{
+        $(this).addClass('active');
+        $(this).closest('.reply_area').find('.reply_form').show().addClass('active');
+        $(this).closest('.reply_area').find('.sr_form').addClass('active');
+    }
+});
+</script>
+
+
+</body>
+</html>	

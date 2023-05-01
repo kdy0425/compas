@@ -53,23 +53,51 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-//datepicker 호출 yyyy mm dd
-document.addEventListener("DOMContentLoaded", function () {
-	let datepickerIcons = document.getElementsByClassName('datepicker_icon');
-	for (let i = 0; i < datepickerIcons.length; i++) {
-		new Litepicker({
-			lang: 'ko-KR',
-			format: 'YYYY-MM-DD',
-			element: datepickerIcons[i],
-			buttonText: {
-				previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
-			<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
-				nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
-			<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
-			},
+
+//데이트픽커
+// Datepicker 옵션 설정
+$.datepicker.setDefaults({
+	dateFormat: 'yy.mm.dd',
+	prevText: '이전 달',
+	nextText: '다음 달',
+	monthNames: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+	monthNamesShort: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+	dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+	dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+	dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+	showMonthAfterYear: true,
+});
+
+// Datepicker 적용
+$(".datepicker").each(function () {
+	if ($(this).hasClass('select_yymm')) {
+		// select_yymm 클래스가 있는 경우 연월 셀렉트박스로 변경
+		$(this).datepicker({
+			changeMonth: true,
+			changeYear: true,
+			dateFormat: 'yy.mm.dd',
+			beforeShow: function (input, inst) {
+				if ($(input).hasClass('select_yymm')) {
+					inst.dpDiv.addClass('datepicker_select_yymm');
+				}
+			}
+		});
+	} else {
+		// select_yymm 클래스가 없는 경우 기본 datepicker 적용
+		$(this).datepicker({
+			showOtherMonths: true,
+			yearSuffix: '.',
+			dateFormat: 'yy.mm.dd',
+			selectOtherMonths: true,
+			beforeShow: function (input, inst) {
+				if (!$(input).hasClass('select_yymm')) {
+					inst.dpDiv.removeClass('datepicker_select_yymm');
+				}
+			}
 		});
 	}
 });
+
 
 //input 최대값 계산
 document.addEventListener('input', function (event) {
@@ -259,18 +287,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //레이어 팝업
-function layerToggle(elm , display){
-	if(display === 'open'){
+function layerToggle(elm, display) {
+	if (display === 'open') {
 		document.getElementById(elm).style.display = 'block'
-	}else if (display === 'close'){
+	} else if (display === 'close') {
 		document.getElementById(elm).style.display = 'none'
 	}
 }
 
 //토글버튼
 let toggleButtons = document.querySelectorAll('.toggle_btn');
-toggleButtons.forEach(function(btn) {
-	btn.addEventListener('click', function() {
+toggleButtons.forEach(function (btn) {
+	btn.addEventListener('click', function () {
 		if (this.disabled || this.classList.contains('disabled')) {
 			return;
 		}
@@ -280,17 +308,17 @@ toggleButtons.forEach(function(btn) {
 
 
 //셀렉트박스 커스텀
-$('.selected').click(function(e) {
+$('.selected').click(function (e) {
 	e.stopPropagation();
 	let status = false;
 	let $parent = $(this).parent('.select_custom');
-	if($(this).parent('.select_custom').hasClass('active')){
+	if ($(this).parent('.select_custom').hasClass('active')) {
 		status = true;
 	}
 	$('.select_custom').removeClass('active');
-	if(status){
+	if (status) {
 		$(this).parent('.select_custom').removeClass('active');
-	}else{
+	} else {
 		$(this).parent('.select_custom').toggleClass('active');
 	}
 	let dropdownTop = $parent.offset().top + $parent.outerHeight(true);
@@ -304,11 +332,11 @@ $('.selected').click(function(e) {
 	}
 });
 
-$(document).click(function() {
+$(document).click(function () {
 	$('.select_custom').removeClass('active up');
 });
 
-$('.option').click(function(e) {
+$('.option').click(function (e) {
 	e.stopPropagation();
 	let selectedText = $(this).text();
 	$(this).parent('.options').siblings('.selected').text(selectedText);
@@ -318,3 +346,98 @@ $('.option').click(function(e) {
 	$(this).closest('.select_custom').removeClass('active up');
 	$(this).closest('.select_custom').addClass('wrote');
 });
+
+
+
+//alert 컨트롤
+$('.alert').on('click', function (e) {
+	if ($('.alert_box').is(e.target) || $('.alert_box').has(e.target).length > 0) {
+		return;
+	}
+	if ($('.alert').is(':visible')) {
+		$('.alert').hide();
+	}
+});
+function alertHide(elm) {
+	$(elm).closest('.alert').hide();
+}
+function popupHide(elm) {
+	$(elm).closest('.popup').hide();
+}
+
+//첨부파일
+$(function () {
+	$('.file_upload_wrap').each(function () {
+		let selectedFiles = []; 
+
+		let $input = $(this).find('input[type=file]');
+		$input.on('change', function () {
+			let filename = $(this).val().split('\\').pop();
+			if (filename) {
+				$(this).closest('.ip_group').find('.selected_file').text(filename);
+				$(this).closest('.ip_group').find('.selected_file').addClass('active');
+				selectedFiles = []; 
+				selectedFiles.push(this.files[0]); 
+				console.log(selectedFiles); 
+			} else {
+				$(this).closest('.ip_group').find('.selected_file').text('선택된 파일 없음');
+				$(this).closest('.ip_group').find('.selected_file').removeClass('active');
+			}
+		});
+
+		let $btn_addfile = $(this).find('.btn_addfile');
+		$btn_addfile.on('click', function () {
+			let $sel_files = $(this).closest('.file_upload_wrap').find('.sel_files');
+			for (let i = 0; i < selectedFiles.length; i++) {
+				let filename = selectedFiles[i].name;
+				let filesize = selectedFiles[i].size;
+				let $file = $('<div class="file"><span class="name">' + filename + '</span><button type="button" class="remove_file">삭제</button></div>');
+				$sel_files.append($file);
+				$input.closest('.ip_group').find('.selected_file').text('선택된 파일 없음'); 
+				$(this).closest('.ip_group').find('.selected_file').removeClass('active');
+			}
+			console.log(selectedFiles);
+		});
+
+		let $sel_files = $(this).find('.sel_files');
+		$sel_files.on('click', '.remove_file', function () {
+			let filename = $(this).siblings('.name').text();
+			for (let i = 0; i < selectedFiles.length; i++) {
+				if (selectedFiles[i].name === filename) {
+					selectedFiles.splice(i, 1); 
+					break;
+				}
+			}
+			$(this).parent('.file').remove();
+			let selected_files = '';
+			for (let i = 0; i < selectedFiles.length; i++) {
+				selected_files += selectedFiles[i].name + ', ';
+			}
+			if (selected_files) {
+				selected_files = selected_files.slice(0, -2); 
+			} else {
+				selected_files = '선택된 파일 없음';
+			}
+			$(this).closest('.file_upload_wrap').find('.selected_file').text(selected_files);
+			$(this).closest('.ip_group').find('.selected_file').addClass('active');
+			console.log(selectedFiles);
+		});
+	});
+});
+
+//dialogue
+function dialogue(msg, type){
+    if (!$('.dialogue').length) {
+        $('html').append('<div class="dialogue"></div>');
+    }
+    let $dialogueItem = $(`<div class="dialogue_item ${type}" style="opacity: 0">${msg}</div>`);
+    $('.dialogue').append($dialogueItem);
+    $dialogueItem.css('right', '-100px').animate({right: '0', opacity: '1'}, 600, function() {
+        $(this).delay(3000).animate({opacity: '0'}, 600, function() {
+            $(this).remove(); 
+            if (!$('.dialogue .dialogue_item').length) {
+                $('.dialogue').remove();
+            }
+        });
+    });
+}

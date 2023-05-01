@@ -281,100 +281,343 @@
 					<h2 class="page_title">Style Guide for Web Design</h2>
 
 					<div class="flex_btn">
-						<a href="./guide1.html" class="active">color, text</a>
+						<a href="./guide1.html">color, text</a>
 						<a href="./guide2.html">button</a>
 						<a href="./guide3.html">form</a>
 						<a href="./guide4.html">tap, table, etc</a>
-						<a href="./guide5.html">popup</a>
+						<a href="./guide5.html" class="active">popup</a>
 						<a href="./guide6.html">table</a>
 					</div>
 
-					<div class="guide_box btn_color">
-						<h4 class="title">버튼 기본컬러</h4>
+                    <div class="guide_box">
+						<h4 class="title">Datepicker</h4>
 						<div class="cnt">
-							<button type="button" class="btn primary1">버튼 #3C4DE2</button>
-							<button type="button" class="btn primary2">버튼 #272848</button>
-							<button type="button" class="btn primary3">버튼 #F54E41</button>
-							<button type="button" class="btn secondary1">버튼 #4785F1</button>
-							<button type="button" class="btn secondary2">버튼 #2DC5AB</button>
-							<button type="button" class="btn secondary3">버튼 #835FEB</button>
-							<button type="button" class="btn secondary4">버튼 #DC9B18</button>
-						</div>
-					</div>
+							<div class="inputs">
+                                <div class="ip_item" style="width:380px;">
+                                    <div class="ip_tit">type1</div>
+                                    <div class="form_type1">
+                                        <div class="row">
+                                            <div class="ip_group">
+                                                <div class="ip">
+                                                    <input type="text" class="datepicker">
+                                                </div>
+                                                <span class="dash">~</span>
+                                                <div class="ip">
+                                                    <input type="text" class="datepicker">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-					<div class="guide_box text_color">
-						<h4 class="title">폰트 기본컬러</h4>
-						<div class="cnt">
-							<div class="text primary1">폰트 #3C4DE2</div>
-							<div class="text primary2">폰트 #272848</div>
-							<div class="text primary3">폰트 #F54E41</div>
-							<div class="text secondary1">폰트 #4785F1</div>
-							<div class="text secondary2">폰트 #2DC5AB</div>
-							<div class="text secondary3">폰트 #835FEB</div>
-							<div class="text secondary4">폰트 #DC9B18</div>
-						</div>
-					</div>
+                                <div class="ip_item" style="width:380px;">
+                                    <div class="ip_tit">type2</div>
+                                    <div class="form_type1">
+                                        <div class="row">
+                                            <div class="ip_group">
+                                                <div class="ip">
+                                                    <input type="text" class="datepicker select_yymm">
+                                                </div>
+                                                <span class="dash">~</span>
+                                                <div class="ip">
+                                                    <input type="text" class="datepicker select_yymm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="guide_box text_color">
-						<h4 class="title">상태 고정컬러</h4>
+                    <div class="guide_box">
+						<h4 class="title">Alert</h4>
 						<div class="cnt">
-							<div class="text error">error #3C4DE2(부정 메시지, 긴급, 오류)</div>
-							<div class="text ok">ok #272848(긍정 메시지, 사용가능, 승인)</div>
-						</div>
-					</div>
+							<div class="btn_inline">
+                                <button type="button" onclick="$('.alert').show();">alert</button>
+                            </div>
+                        </div>
 
-					<div class="guide_box text_color">
-						<h4 class="title">폰트컬러</h4>
-						<div class="cnt">
-							<div class="text color1">폰트컬러 #222</div>
-							<div class="text color2">폰트컬러 #686A7A</div>
-							<div class="text color3">폰트컬러 #9B9CA4</div>
-						</div>
-					</div>
-
-					<div class="guide_box btn_color">
-						<h4 class="title">라인컬러</h4>
-						<div class="cnt">
-							<button type="button" class="line1">라인컬러 #DEE0E5</button>
-							<button type="button" class="line2">라인컬러 #E9E9E9</button>
-							<button type="button" class="line3">라인컬러 #D8DBE5</button>
-							<button type="button" class="line4">라인컬러 #CCCCCC</button>
-						</div>
-					</div>
-
-					<div class="guide_box text_type">
-						<h4 class="title">문자</h4>
-						<div class="cnt">
-							<h2>h2 ExtraBold, 34px, Line-height 42</h2>
-							<h3>h3 ExtraBold, 30px, Line-height 38</h3>
-							<h4>h4 ExtraBold, 24px, Line-height 32</h4>
-							<div class="text1">
-								text text1
-								Bold, 14px, Line-height 22
-								기본폰트, 본문, 테이블, 리스트, Input 등
-							</div>
-							<div class="text2">
-								text text2
-								ExtraBold, 14px, Line-height 22
-								강조폰트
-							</div>
-							<div class="text3">
-								text text3
-								ExtraBold, 14px, Line-height 22
-								강조폰트, Table th, Label
-							</div>
-							<div class="te text4">
-								text text4
-								Bold, 14px, Line-height 22
-								분문
-							</div>
-							<div class="text5">
-								text text5
-								Bold, 13px, Line-height 21
-								보조텍스트
+						<div class="alert" style="display:none;">
+							<div class="alert_box">
+								<div class="alert_title">타이틀</div>
+								<button type="button" class="btn_close" onclick="alertHide(this)">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 838">
+												<path data-name="선 70" style="fill:none;stroke:#222;stroke-linecap:round;stroke-width:2px" d="M9.444 0 0 9.444" transform="translate(12.278 12.278)"/>
+												<path data-name="선 71" style="fill:none;stroke:#222;stroke-linecap:round;stroke-width:2px" d="m0 0 9.444 9.444" transform="translate(12.278 12.278)"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">닫기</span>
+								</button>
+								<div class="alert_content">
+									내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 
+								</div>
+								<div class="form_btns">
+									<button type="button" class="btn lg type3" onclick="alertHide(this)">취소</button>
+									<button type="button" class="btn lg type1">확인</button>
+								</div>
 							</div>
 						</div>
+                    </div>
+
+					<div class="guide_box">
+						<h4 class="title">Dialogue</h4>
+						<div class="cnt">
+							<div class="btn_inline">
+                                <button type="button" onclick="dialogue('일시적인 메시지를 보여줄 때 사용', 'default')">Default</button>
+                            </div>
+							<div class="btn_inline">
+                                <button type="button" onclick="dialogue('일시적인 긍정/성공 메시지를 보여줄 때 사용', 'success')">Success</button>
+                            </div>
+							<div class="btn_inline">
+                                <button type="button" onclick="dialogue('일시적인 부정/에러 메시지를 보여줄 때 사용', 'error')">Error</button>
+                            </div>
+                        </div>
 					</div>
+
+					<div class="guide_box">
+						<h4 class="title">Popup</h4>
+						<div class="cnt">
+							<div class="btn_inline">
+                                <button type="button" onclick="$('.popup1').show();">팝업 text</button>
+                            </div>
+							<div class="btn_inline">
+                                <button type="button" onclick="$('.popup2').show();">팝업 form</button>
+                            </div>
+							<div class="btn_inline">
+                                <button type="button" onclick="$('.popup3').show();">팝업 detail</button>
+                            </div>
+                        </div>
+						
+						<!-- 팝업 text -->
+						<div class="popup popup1" style="display:none;">
+							<div class="popup_box" style="width:600px;">
+								<div class="popup_title">타이틀</div>
+								<button type="button" class="btn_close" onclick="popupHide(this)">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 838">
+												<path data-name="선 70" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="M9.444 0 0 9.444" transform="translate(12.278 12.278)"/>
+												<path data-name="선 71" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="m0 0 9.444 9.444" transform="translate(12.278 12.278)"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">닫기</span>
+								</button>
+								<div class="popup_inner">
+									<div class="popup_content text_content">
+										내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 내용 텍스트 
+									</div>
+									<div class="form_btns">
+										<button type="button" class="btn lg type3" onclick="popupHide(this)">취소</button>
+										<button type="button" class="btn lg type1" onclick="popupHide(this)">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 팝업 form -->
+						<div class="popup popup2" style="display:none;">
+							<div class="popup_box" style="width:600px;">
+								<div class="popup_title">타이틀</div>
+								<button type="button" class="btn_close" onclick="popupHide(this)">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 838">
+												<path data-name="선 70" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="M9.444 0 0 9.444" transform="translate(12.278 12.278)"/>
+												<path data-name="선 71" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="m0 0 9.444 9.444" transform="translate(12.278 12.278)"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">닫기</span>
+								</button>
+								<div class="popup_inner">
+									<div class="popup_content">
+										<div class="form_type1">
+											<div class="row">
+												<div class="ip_tit required">타이틀</div>
+												<div class="ip_group">
+													<div class="ip">
+														<input type="text" placeholder="제목을 넣어주세요.">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="ip_tit required">타이틀</div>
+												<div class="ip_group">
+													<div class="ip">
+														<input type="text" value="텍스트">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="ip_tit required">타이틀</div>
+												<div class="ip_group">
+													<div class="ip">
+														<select name="" id="">
+															<option value="">옵션1</option>
+															<option value="">옵션2</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="ip_tit required">타이틀</div>
+												<div class="ip_group">
+													<div class="ip">
+														<div class="select_custom">
+															<input type="hidden">
+															<a href="javascript:;" class="selected">Option1</a>
+															<div class="options">
+																<a href="javascript:;" class="option active">Option1</a>
+																<a href="javascript:;" class="option">Option2</a>
+																<a href="javascript:;" class="option">Option3</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="ip_tit required">타이틀</div>
+												<div class="ip_group">
+													<div class="ip">
+														<input type="text" class="datepicker" value="2023.04.29">
+													</div>
+													<label class="checkbox">
+														<input type="checkbox" checked><span class="ck_icon"></span>
+														<span class="ck_text">텍스트 CHECKBOX</span>
+													</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="ip_tit required">타이틀</div>
+												<div class="file_upload_wrap">
+													<div class="ip_group">
+														<div class="file_upload">
+															<label><input id="file" type="file" multiple>파일선택</label>
+															<span class="selected_file">선택된 파일 없음</span>
+															<button type="button" class="btn_addfile">
+																<span class="icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+																		<g data-name="그룹 860">
+																			<path data-name="패스 1430" d="M14 10a1 1 0 0 0-1 1v2H3v-2a1 1 0 0 0-2 0v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2a1 1 0 0 0-1-1z" style="fill:#222" transform="translate(2 2)"/>
+																			<path data-name="패스 1431" d="M5 6h2v2a1 1 0 0 0 2 0V6h2a1 1 0 0 0 0-2H9V2a1 1 0 0 0-2 0v2H5a1 1 0 0 0 0 2z" style="fill:#222" transform="translate(2 2)"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="sound_only">파일추가</span>
+															</button>
+														</div>
+													</div>
+													<div class="sel_files">
+														<!-- <div class="file"><span class="name">abcd.jpg</span><button type="button" class="remove_file">삭제</button></div>
+														<div class="file"><span class="name">파일명.jpg</span><button type="button" class="remove_file">삭제</button></div> -->
+													</div>
+												</div>
+												<div class="info_text">
+													<span class="icon">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+															<g data-name="그룹 856">
+																<path data-name="패스 1427" d="M9 18a9 9 0 1 1 9-9 9 9 0 0 1-9 9zM9 2.25A6.75 6.75 0 1 0 15.75 9 6.75 6.75 0 0 0 9 2.25z" style="fill:#dee0e5"/>
+																<g>
+																	<rect data-name="사각형 114" width="2" height="5" rx=".5" transform="translate(8 8)" style="fill:#3c4de2"/>
+																	<circle data-name="타원 77" cx="1" cy="1" r="1" transform="translate(8 5)" style="fill:#3c4de2"/>
+																</g>
+															</g>
+														</svg>
+													</span>
+													<div class="it_txt">gif, jpg, jpeg, png, xls, xlsx, txt 형식의 파일만 업로드 가능합니다.</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="ip_tit">타이틀</div>
+												<div class="ip_group">
+													<div class="ip">
+														<textarea name="" id="" placeholder="내용을 입력하세요."></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form_btns">
+										<button type="button" class="btn lg type3" onclick="popupHide(this)">취소</button>
+										<button type="button" class="btn lg type1" onclick="popupHide(this)">등록</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 팝업 detail -->
+						<div class="popup popup3" style="display:none;">
+							<div class="popup_box" style="width:640px;">
+								<div class="popup_title">거래처 정보</div>
+								<button type="button" class="btn_close" onclick="popupHide(this)">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 838">
+												<path data-name="선 70" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="M9.444 0 0 9.444" transform="translate(12.278 12.278)"/>
+												<path data-name="선 71" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px" d="m0 0 9.444 9.444" transform="translate(12.278 12.278)"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">닫기</span>
+								</button>
+								<div class="popup_inner">
+									<div class="popup_content">
+										<div class="bv_table">
+											<table class="layout_fixed">
+												<colgroup>
+													<col style="width:160px;">
+													<col>
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>거래처 명</th>
+														<td>거래처 1</td>
+													</tr>
+													<tr>
+														<th>사업자등록번호</th>
+														<td>1234-5678-9000</td>
+													</tr>
+													<tr>
+														<th>대표명</th>
+														<td>홍길동</td>
+													</tr>
+													<tr>
+														<th>대표번호</th>
+														<td>02-123-4567</td>
+													</tr>
+													<tr>
+														<th>팩스번호</th>
+														<td>02-123-4567</td>
+													</tr>
+													<tr>
+														<th>주소</th>
+														<td>우편번호 01234<br/>
+															서울시 강남구 논현로 706 아이캐슬빌딩 501호</td>
+													</tr>
+													<tr>
+														<th>비고</th>
+														<td>텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+															텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+															텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+															텍스트 텍스트 텍스트 </td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="form_btns">
+										<button type="button" class="btn lg type3" onclick="popupHide(this)">닫기</button>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
 
 				</div>
 				<!-- //content -->

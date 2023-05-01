@@ -20,6 +20,9 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
 <script src="../../assets/js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/ui.jqgrid.css" type="text/css" />
+<script type="text/javascript" src="../../assets/js/grid.locale-kr.js" /></script>
+<script type="text/javascript" src="../../assets/js/jquery.jqGrid.src.js" /></script>
 
 </head>
 <body>
@@ -281,97 +284,383 @@
 					<h2 class="page_title">Style Guide for Web Design</h2>
 
 					<div class="flex_btn">
-						<a href="./guide1.html" class="active">color, text</a>
+						<a href="./guide1.html">color, text</a>
 						<a href="./guide2.html">button</a>
 						<a href="./guide3.html">form</a>
 						<a href="./guide4.html">tap, table, etc</a>
 						<a href="./guide5.html">popup</a>
-						<a href="./guide6.html">table</a>
+						<a href="./guide6.html" class="active">table</a>
 					</div>
-
-					<div class="guide_box btn_color">
-						<h4 class="title">버튼 기본컬러</h4>
+                    
+                    <div class="guide_box">
 						<div class="cnt">
-							<button type="button" class="btn primary1">버튼 #3C4DE2</button>
-							<button type="button" class="btn primary2">버튼 #272848</button>
-							<button type="button" class="btn primary3">버튼 #F54E41</button>
-							<button type="button" class="btn secondary1">버튼 #4785F1</button>
-							<button type="button" class="btn secondary2">버튼 #2DC5AB</button>
-							<button type="button" class="btn secondary3">버튼 #835FEB</button>
-							<button type="button" class="btn secondary4">버튼 #DC9B18</button>
-						</div>
-					</div>
-
-					<div class="guide_box text_color">
-						<h4 class="title">폰트 기본컬러</h4>
-						<div class="cnt">
-							<div class="text primary1">폰트 #3C4DE2</div>
-							<div class="text primary2">폰트 #272848</div>
-							<div class="text primary3">폰트 #F54E41</div>
-							<div class="text secondary1">폰트 #4785F1</div>
-							<div class="text secondary2">폰트 #2DC5AB</div>
-							<div class="text secondary3">폰트 #835FEB</div>
-							<div class="text secondary4">폰트 #DC9B18</div>
-						</div>
-					</div>
-
-					<div class="guide_box text_color">
-						<h4 class="title">상태 고정컬러</h4>
-						<div class="cnt">
-							<div class="text error">error #3C4DE2(부정 메시지, 긴급, 오류)</div>
-							<div class="text ok">ok #272848(긍정 메시지, 사용가능, 승인)</div>
-						</div>
-					</div>
-
-					<div class="guide_box text_color">
-						<h4 class="title">폰트컬러</h4>
-						<div class="cnt">
-							<div class="text color1">폰트컬러 #222</div>
-							<div class="text color2">폰트컬러 #686A7A</div>
-							<div class="text color3">폰트컬러 #9B9CA4</div>
-						</div>
-					</div>
-
-					<div class="guide_box btn_color">
-						<h4 class="title">라인컬러</h4>
-						<div class="cnt">
-							<button type="button" class="line1">라인컬러 #DEE0E5</button>
-							<button type="button" class="line2">라인컬러 #E9E9E9</button>
-							<button type="button" class="line3">라인컬러 #D8DBE5</button>
-							<button type="button" class="line4">라인컬러 #CCCCCC</button>
-						</div>
-					</div>
-
-					<div class="guide_box text_type">
-						<h4 class="title">문자</h4>
-						<div class="cnt">
-							<h2>h2 ExtraBold, 34px, Line-height 42</h2>
-							<h3>h3 ExtraBold, 30px, Line-height 38</h3>
-							<h4>h4 ExtraBold, 24px, Line-height 32</h4>
-							<div class="text1">
-								text text1
-								Bold, 14px, Line-height 22
-								기본폰트, 본문, 테이블, 리스트, Input 등
+							<div class="bl_wrap">
+								<div class="bl_title">테이블 타이틀</div>
+								<div class="bl_top flex">
+									<div class="l">
+										<select name="" id="" style="width:100px">
+											<option value="">10</option>
+										</select>
+										<div class="page_info"><strong>2</strong> / 99 페이지</div>
+									</div>
+									<div class="r">
+										<select name="" id="" style="width:133px">
+											<option value="">제목+내용</option>
+											<option value="">제목</option>
+											<option value="">내용</option>
+										</select>
+										<input type="text" placeholder="검색어" class="bl_search_ip">
+										<button type="button" class="btn type2 bl_search_submit">검색</button>
+									</div>
+								</div>
+								<div class="bl_table">
+									<table class="layout_fixed">
+										<colgroup>
+											<col style="width:80px;">
+											<col style="width:calc(61% - 80px);">
+											<col style="width:13%;">
+											<col style="width:13%;">
+											<col style="width:13%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>No.</th>
+												<th>제목</th>
+												<th>작성자</th>
+												<th>작성일</th>
+												<th>조회수</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="num">10</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다. </a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">9</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">8</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">7</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">6</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">5</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">4</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">3</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">2</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+											<tr>
+												<td class="num">1</td>
+												<td class="subject"><a href="javascript:;">게시판 제목입니다. 게시판 제목입니다.</a></td>
+												<td>운영자</td>
+												<td>2023.04.10</td>
+												<td>200</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="bl_bottom">
+									<div class="l"></div>
+									<div class="paging">
+										<a href="javascript:;" class="pg_btn first disabled" >
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 839">
+														<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1325.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+														<path data-name="패스 81" d="m1346.906 684.75-4 4 4 4" transform="translate(-1330.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">처음 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg_btn prev disabled">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 840">
+														<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1328.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">이전 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg_btn first" >
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 839">
+														<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1325.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+														<path data-name="패스 81" d="m1346.906 684.75-4 4 4 4" transform="translate(-1330.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">처음 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg_btn prev">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 840">
+														<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1328.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">이전 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg">1</a>
+										<a href="javascript:;" class="pg">2</a>
+										<a href="javascript:;" class="pg">3</a>
+										<a href="javascript:;" class="pg">4</a>
+										<a href="javascript:;" class="pg active">5</a>
+										<a href="javascript:;" class="pg">6</a>
+										<a href="javascript:;" class="pg">7</a>
+										<a href="javascript:;" class="pg">8</a>
+										<a href="javascript:;" class="pg">9</a>
+										<a href="javascript:;" class="pg">10</a>
+										<span class="dot">...</span>
+										<a href="javascript:;" class="pg">99</a>
+										<a href="javascript:;" class="pg_btn next">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 841">
+														<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1326.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">다음 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg_btn end">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 842">
+														<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1329.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+														<path data-name="패스 81" d="m1342.906 684.75 4 4-4 4" transform="translate(-1324.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">끝 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg_btn next disabled">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 841">
+														<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1326.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">다음 페이지</span>
+										</a>
+										<a href="javascript:;" class="pg_btn end disabled">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+													<g data-name="그룹 842">
+														<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1329.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+														<path data-name="패스 81" d="m1342.906 684.75 4 4-4 4" transform="translate(-1324.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+													</g>
+												</svg>
+											</span>
+											<span class="sound_only">끝 페이지</span>
+										</a>
+									</div>
+									<div class="r">
+										<button type="button" class="btn lg type1">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+													<g data-name="그룹 836">
+														<g data-name="타원 9" style="stroke-width:1.5px;stroke:#fff;fill:none">
+															<circle cx="10" cy="10" r="10" style="stroke:none"></circle>
+															<circle cx="10" cy="10" r="9.25" style="fill:none"></circle>
+														</g>
+														<path data-name="선 49" transform="translate(10 6)" style="stroke-linecap:round;stroke-width:2px;stroke:#fff;fill:none" d="M0 0v8"></path>
+														<path data-name="선 50" transform="rotate(90 2 12)" style="stroke-linecap:round;stroke-width:2px;stroke:#fff;fill:none" d="M0 0v8"></path>
+													</g>
+												</svg>
+											</span>등록
+										</button>
+									</div>
+								</div>
 							</div>
-							<div class="text2">
-								text text2
-								ExtraBold, 14px, Line-height 22
-								강조폰트
+						</div>
+					</div>
+
+                    <div class="guide_box">
+						<h4 class="title">Basic Button Large</h4>
+						<div class="cnt">
+                            <script>
+                                $(document).ready(function() {
+                                    var mydata = [
+                                    {no:"1",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:"test",button:"file"},
+                                    {no:"2",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:"test",button:"file"},
+                                    ];
+                                
+                                    $("#list").jqGrid({
+                                        datatype: "local",
+                                        data: mydata,
+                                        colNames:['No.', '정렬타입 항목', '항목','항목','항목','항목', '첨부파일', '버튼타입', '편집'],
+                                        colModel:[
+											{name:'no', index:'no', width:90, align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
+											{name:'item1', index:'item1',align: "left" ,
+												formatter: function(cellvalue, options, rowObject) {
+													return `<a href="#">${cellvalue}</a>`;
+												},
+												cellattr: function() { return ' title=""'; }
+											},
+											{name:'item2', index:'item2', align: "center" ,cellattr: function() { return ' title=""'; }},
+                                            {name:'item3', index:'item3', align: "center" ,cellattr: function() { return ' title=""'; }},
+                                            {name:'item4', index:'item4', align: "center" ,sortable:false ,
+												formatter: function(cellvalue, options, rowObject) {
+													return `<a href="#">${cellvalue}</a>`;
+												},
+												cellattr: function() { return ' title=""'; }
+											},
+                                            {name:'item5', index:'item5', align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
+                                            {name:'file', index:'file', align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
+                                            {name:'button', index:'button', width:145, align: "center" ,sortable:false ,formatter: buttonButton ,cellattr: function() { return ' title=""'; }},
+                                            {name:'edit', index:'edit', width:240, align: "center" ,sortable:false , formatter: buttonEdit  ,cellattr: function() { return ' title=""'; }},
+                                        ],
+                                        autowidth: true,
+                                        multiselect:true,
+										multiselectWidth: 55,
+                                        pager:'#pager',
+                                        rowNum: 7,
+                                        rowList: [10, 20, 30],
+                                        sortname: 'id',
+                                        sortorder: 'asc',
+                                    });
+
+									function buttonButton(cellvalue, options, rowObject) {
+										return `
+										<button type="button" class="btn xs type6">
+											버튼
+										</button>
+										`
+									}
+
+									function buttonEdit(cellvalue, options, rowObject) {
+										return `
+										<button type="button" class="btn xs type4">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+													<g data-name="그룹 43">
+														<path data-name="패스 77" d="M13 .5 15.5 3l-7 7L5 11l1-3.5z" transform="translate(2.5 1.5)" style="fill:none;stroke:#3c4de2;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+														<path data-name="패스 78" d="M13.5 9.5V14a1.5 1.5 0 0 1-1.5 1.5H2A1.5 1.5 0 0 1 .5 14V4A1.5 1.5 0 0 1 2 2.5h4.5" transform="translate(2.5 1.5)" style="fill:none;stroke:#3c4de2;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+													</g>
+												</svg>
+											</span>수정
+										</button><button type="button" class="btn xs type5">
+											<span class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+													<g data-name="그룹 44">
+														<path data-name="패스 79" d="m2.5 6.5.865 7.649A1.5 1.5 0 0 0 4.857 15.5h6.286a1.5 1.5 0 0 0 1.492-1.351L13.5 6.5" transform="translate(2 2)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+														<path data-name="선 51" transform="translate(2.5 5.5)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h15"/>
+														<path data-name="패스 80" d="M5.5 3.5v-3h5v3" transform="translate(2 2)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+													</g>
+												</svg>
+											</span>삭제
+										</button>
+										`
+									}
+                                
+                                    $(window).on('resize.jqGrid', function() {
+                                        $("#list").jqGrid('setGridWidth', $("#list").parent().parent().parent().parent().parent().width());
+                                    })
+                                });
+                                </script>
+							<div class="jq_table">
+								<table id="list"></table>
+                            	<div id="pager"></div>
 							</div>
-							<div class="text3">
-								text text3
-								ExtraBold, 14px, Line-height 22
-								강조폰트, Table th, Label
-							</div>
-							<div class="te text4">
-								text text4
-								Bold, 14px, Line-height 22
-								분문
-							</div>
-							<div class="text5">
-								text text5
-								Bold, 13px, Line-height 21
-								보조텍스트
+						</div>
+					</div>
+
+                    <div class="guide_box">
+						<div class="cnt">
+							<div class="bv_wrap">
+								<div class="bv_title">테이블 타이틀</div>
+								<div class="bv_table">
+									<table class="layout_fixed">
+										<colgroup>
+											<col style="width:200px;">
+											<col style="width:calc((100% - 400px)/2);">
+											<col style="width:200px;">
+											<col style="width:calc((100% - 400px)/2);">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>항목</th>
+												<td>텍스트</td>
+												<th>항목</th>
+												<td>텍스트</td>
+											</tr>
+											<tr>
+												<th>항목</th>
+												<td>텍스트</td>
+												<th>항목</th>
+												<td>텍스트</td>
+											</tr>
+											<tr>
+												<th>항목</th>
+												<td colspan="3">텍스트</td>
+											</tr>
+											<tr>
+												<th>비고</th>
+												<td colspan="3">텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 
+													텍스트 텍스트 텍스트 </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>

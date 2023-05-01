@@ -19,6 +19,8 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+
 </head>
 <body>
 
@@ -457,7 +459,7 @@
 					</div>
 
 					<div class="guide_box">
-						<h4 class="title">더보기, 리스트</h4>
+						<h4 class="title">더보기, 리스트, 검색</h4>
 						<div class="cnt">
 							<div class="btn_inline">
                                 <a href="javascript:;" class="btn_more">
@@ -504,7 +506,250 @@
 									</span>
 									<span class="sound_only">더 보기</span>
 								</button>
+
+								<a href="javascript:;" class="btn_list">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 102">
+												<path data-name="선 25" transform="translate(7 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 26" transform="translate(7 4)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 27" transform="translate(7 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 30" transform="translate(2 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+												<path data-name="선 29" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1" transform="translate(2 4)"/>
+												<path data-name="선 31" transform="translate(2 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">목록</span>
+								</a>
+								<a href="javascript:;" class="btn_list active">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 102">
+												<path data-name="선 25" transform="translate(7 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 26" transform="translate(7 4)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 27" transform="translate(7 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 30" transform="translate(2 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+												<path data-name="선 29" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1" transform="translate(2 4)"/>
+												<path data-name="선 31" transform="translate(2 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">목록</span>
+								</a>
+								<a href="javascript:;" class="btn_list disabled">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 102">
+												<path data-name="선 25" transform="translate(7 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 26" transform="translate(7 4)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 27" transform="translate(7 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 30" transform="translate(2 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+												<path data-name="선 29" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1" transform="translate(2 4)"/>
+												<path data-name="선 31" transform="translate(2 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">목록</span>
+								</a>
+								<button type="button" class="btn_list">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 102">
+												<path data-name="선 25" transform="translate(7 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 26" transform="translate(7 4)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 27" transform="translate(7 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 30" transform="translate(2 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+												<path data-name="선 29" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1" transform="translate(2 4)"/>
+												<path data-name="선 31" transform="translate(2 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">목록</span>
+								</button>
+								<button type="button" class="btn_list active">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 102">
+												<path data-name="선 25" transform="translate(7 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 26" transform="translate(7 4)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 27" transform="translate(7 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 30" transform="translate(2 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+												<path data-name="선 29" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1" transform="translate(2 4)"/>
+												<path data-name="선 31" transform="translate(2 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">목록</span>
+								</button>
+								<button type="button" class="btn_list" disabled>
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 102">
+												<path data-name="선 25" transform="translate(7 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 26" transform="translate(7 4)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 27" transform="translate(7 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h11"/>
+												<path data-name="선 30" transform="translate(2 10)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+												<path data-name="선 29" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1" transform="translate(2 4)"/>
+												<path data-name="선 31" transform="translate(2 16)" style="fill:none;stroke:#9b9ca4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h1"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">목록</span>
+								</button>
+
+								<button type="button" class="btn_search">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 835">
+												<path data-name="패스 1423" d="M5.075 5.075 1 1" transform="translate(12.925 12.925)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+												<circle data-name="타원 42" cx="6.75" cy="6.75" r="6.75" transform="translate(2 2)" style="stroke-linejoin:round;stroke-miterlimit:10;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">검색</span>
+								</button>
+								<button type="button" class="btn_search" disabled>
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 835">
+												<path data-name="패스 1423" d="M5.075 5.075 1 1" transform="translate(12.925 12.925)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+												<circle data-name="타원 42" cx="6.75" cy="6.75" r="6.75" transform="translate(2 2)" style="stroke-linejoin:round;stroke-miterlimit:10;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">검색</span>
+								</button>
+
+								<button type="button" class="btn_close">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 838">
+												<path data-name="선 70" style="fill:none;stroke:#222;stroke-linecap:round;stroke-width:2px" d="M9.444 0 0 9.444" transform="translate(12.278 12.278)"/>
+												<path data-name="선 71" style="fill:none;stroke:#222;stroke-linecap:round;stroke-width:2px" d="m0 0 9.444 9.444" transform="translate(12.278 12.278)"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">닫기</span>
+								</button>
+
+								<button type="button" class="btn_addfile">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+											<g data-name="그룹 860">
+												<path data-name="패스 1430" d="M14 10a1 1 0 0 0-1 1v2H3v-2a1 1 0 0 0-2 0v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2a1 1 0 0 0-1-1z" style="fill:#222" transform="translate(2 2)"/>
+												<path data-name="패스 1431" d="M5 6h2v2a1 1 0 0 0 2 0V6h2a1 1 0 0 0 0-2H9V2a1 1 0 0 0-2 0v2H5a1 1 0 0 0 0 2z" style="fill:#222" transform="translate(2 2)"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">파일추가</span>
+								</button>
+								
                             </div>
+						</div>
+					</div>
+
+					<div class="guide_box">
+						<h4 class="title">페이징</h4>
+						<div class="cnt">
+							<div class="paging">
+								<a href="javascript:;" class="pg_btn first disabled" >
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 839">
+												<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1325.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+												<path data-name="패스 81" d="m1346.906 684.75-4 4 4 4" transform="translate(-1330.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">처음 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg_btn prev disabled">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 840">
+												<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1328.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">이전 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg_btn first" >
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 839">
+												<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1325.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+												<path data-name="패스 81" d="m1346.906 684.75-4 4 4 4" transform="translate(-1330.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">처음 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg_btn prev">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 840">
+												<path data-name="패스 73" d="m1346.906 684.75-4 4 4 4" transform="translate(-1328.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">이전 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg">1</a>
+								<a href="javascript:;" class="pg">2</a>
+								<a href="javascript:;" class="pg">3</a>
+								<a href="javascript:;" class="pg">4</a>
+								<a href="javascript:;" class="pg active">5</a>
+								<a href="javascript:;" class="pg">6</a>
+								<a href="javascript:;" class="pg">7</a>
+								<a href="javascript:;" class="pg">8</a>
+								<a href="javascript:;" class="pg">9</a>
+								<a href="javascript:;" class="pg">10</a>
+								<span class="dot">...</span>
+								<a href="javascript:;" class="pg">99</a>
+								<a href="javascript:;" class="pg_btn next">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 841">
+												<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1326.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">다음 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg_btn end">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 842">
+												<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1329.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+												<path data-name="패스 81" d="m1342.906 684.75 4 4-4 4" transform="translate(-1324.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">끝 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg_btn next disabled">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 841">
+												<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1326.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">다음 페이지</span>
+								</a>
+								<a href="javascript:;" class="pg_btn end disabled">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+											<g data-name="그룹 842">
+												<path data-name="패스 73" d="m1342.906 684.75 4 4-4 4" transform="translate(-1329.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+												<path data-name="패스 81" d="m1342.906 684.75 4 4-4 4" transform="translate(-1324.906 -671.75)" style="fill:none;stroke:#686a7a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+											</g>
+										</svg>
+									</span>
+									<span class="sound_only">끝 페이지</span>
+								</a>
+							</div>
 						</div>
 					</div>
 
@@ -513,7 +758,7 @@
 			</div>
 
 			<div id="footer">
-				<div class="ft_copy">Copyright (c) <strong>COMPAS</strong> RIGHTS RESERVED.</div>
+				<div class="ft_copy">Copyright (C) <strong>COMPAS</strong> RIGHTS RESERVED.</div>
 			</div>
 		</div>
 	</div>
