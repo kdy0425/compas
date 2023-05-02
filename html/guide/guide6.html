@@ -295,7 +295,23 @@
                     <div class="guide_box">
 						<div class="cnt">
 							<div class="bl_wrap">
-								<div class="bl_title">테이블 타이틀</div>
+								<div class="bl_title">
+									<div class="title">테이블 테이블</div>
+									<div class="info_text">
+										<span class="icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+												<g data-name="그룹 856">
+													<path data-name="패스 1427" d="M9 18a9 9 0 1 1 9-9 9 9 0 0 1-9 9zM9 2.25A6.75 6.75 0 1 0 15.75 9 6.75 6.75 0 0 0 9 2.25z" style="fill:#dee0e5"></path>
+													<g>
+														<rect data-name="사각형 114" width="2" height="5" rx=".5" transform="translate(8 8)" style="fill:#3c4de2"></rect>
+														<circle data-name="타원 77" cx="1" cy="1" r="1" transform="translate(8 5)" style="fill:#3c4de2"></circle>
+													</g>
+												</g>
+											</svg>
+										</span>
+										<div class="it_txt">부가정보/안내 문구 텍스트</div>
+									</div>
+								</div>
 								<div class="bl_top flex">
 									<div class="l">
 										<select name="" id="" style="width:100px">
@@ -527,24 +543,110 @@
 					</div>
 
                     <div class="guide_box">
-						<h4 class="title">Basic Button Large</h4>
 						<div class="cnt">
-                            <script>
+							<div class="bl_wrap">
+								<div class="bl_title">
+									<div class="title">jqgrid 테이블</div>
+									<div class="info_text">
+										<span class="icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+												<g data-name="그룹 856">
+													<path data-name="패스 1427" d="M9 18a9 9 0 1 1 9-9 9 9 0 0 1-9 9zM9 2.25A6.75 6.75 0 1 0 15.75 9 6.75 6.75 0 0 0 9 2.25z" style="fill:#dee0e5"></path>
+													<g>
+														<rect data-name="사각형 114" width="2" height="5" rx=".5" transform="translate(8 8)" style="fill:#3c4de2"></rect>
+														<circle data-name="타원 77" cx="1" cy="1" r="1" transform="translate(8 5)" style="fill:#3c4de2"></circle>
+													</g>
+												</g>
+											</svg>
+										</span>
+										<div class="it_txt">부가정보/안내 문구 텍스트</div>
+									</div>
+								</div>
+								<div class="bl_top flex">
+									<div class="l">
+										<select name="" id="row_nums" style="width:100px">
+											<option value="10">10</option>
+											<option value="20">20</option>
+											<option value="30">30</option>
+										</select>
+										<div id="page_info" class="page_info"><strong></strong> /  페이지</div>
+									</div>
+									<div class="r">
+										<select name="" id="search_field" style="width:133px">
+											<option value="item1">정렬1</option>
+											<option value="item2">정렬2</option>
+											<option value="item3">정렬3</option>
+											<option value="item4">항목1</option>
+											<option value="item5">항목2</option>
+										</select>
+										<input type="text" placeholder="검색어" id="search_value" class="bl_search_ip">
+										<button type="button" id="search_button" class="btn type2 bl_search_submit">검색</button>
+									</div>
+								</div>
+								<div class="jq_table">
+									<table id="list"></table>
+									<div id="pager" class="pager_jq"></div>
+									<div class="pager_append">
+										<div class="r">
+											<button type="button" class="btn lg type1">
+												<span class="icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+														<g data-name="그룹 836">
+															<g data-name="타원 9" style="stroke-width:1.5px;stroke:#fff;fill:none">
+																<circle cx="10" cy="10" r="10" style="stroke:none"></circle>
+																<circle cx="10" cy="10" r="9.25" style="fill:none"></circle>
+															</g>
+															<path data-name="선 49" transform="translate(10 6)" style="stroke-linecap:round;stroke-width:2px;stroke:#fff;fill:none" d="M0 0v8"></path>
+															<path data-name="선 50" transform="rotate(90 2 12)" style="stroke-linecap:round;stroke-width:2px;stroke:#fff;fill:none" d="M0 0v8"></path>
+														</g>
+													</svg>
+												</span>등록
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script>
                                 $(document).ready(function() {
                                     var mydata = [
-                                    {no:"1",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:"test",button:"file"},
-                                    {no:"2",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:"test",button:"file"},
+                                    {no:"1",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"2",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"3",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
+                                    {no:"4",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
+									{no:"5",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"6",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"7",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
+                                    {no:"8",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
+									{no:"9",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"10",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"11",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
+                                    {no:"12",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
+									{no:"13",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"14",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+                                    {no:"15",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
+									{no:"16",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"17",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"18",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
+                                    {no:"19",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
+									{no:"20",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"21",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"22",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
+                                    {no:"23",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
+									{no:"24",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"25",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
+									{no:"26",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
+                                    {no:"27",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
                                     ];
                                 
                                     $("#list").jqGrid({
                                         datatype: "local",
                                         data: mydata,
-                                        colNames:['No.', '정렬타입 항목', '항목','항목','항목','항목', '첨부파일', '버튼타입', '편집'],
+                                        colNames:['No.', '정렬1', '정렬2','정렬3','항목1','항목2', '첨부파일', '버튼타입', '편집'],
                                         colModel:[
-											{name:'no', index:'no', width:90, align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
-											{name:'item1', index:'item1',align: "left" ,
+											{name:'no', index:'no', width:80, align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
+											{name:'item1', index:'item1', align: "left" ,
 												formatter: function(cellvalue, options, rowObject) {
-													return `<a href="#">${cellvalue}</a>`;
+													return `<a href="javascript:;">${cellvalue}</a>`;
 												},
 												cellattr: function() { return ' title=""'; }
 											},
@@ -557,10 +659,42 @@
 												cellattr: function() { return ' title=""'; }
 											},
                                             {name:'item5', index:'item5', align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
-                                            {name:'file', index:'file', align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
+                                            {name:'file', index:'file', align: "center" ,sortable:false ,
+												formatter: function(cellvalue, options, rowObject) {
+													if (cellvalue.type === 'photo') {
+														return '<a href="'+ cellvalue.url +'" class="icon_file photo">' + cellvalue.name + '</a>';
+													} else if (cellvalue.type === 'file') {
+														return '<a href="'+ cellvalue.url +'" class="icon_file file">' + cellvalue.name + '</a>';
+													}
+												},
+												cellattr: function() { return ' title=""'; }
+											},
                                             {name:'button', index:'button', width:145, align: "center" ,sortable:false ,formatter: buttonButton ,cellattr: function() { return ' title=""'; }},
                                             {name:'edit', index:'edit', width:240, align: "center" ,sortable:false , formatter: buttonEdit  ,cellattr: function() { return ' title=""'; }},
                                         ],
+										loadComplete: function() {
+											var i, names = this.p.colModel, l = names.length;
+											for (i = 0; i < l; i++) {
+												if (names[i].sortable) {
+													$(this).jqGrid('setLabel', names[i].name, '', 'use_sort');
+												}
+											}
+											var currentPage = $(this).getGridParam('page');
+											var totalPage = $(this).getGridParam('lastpage');
+											$("#page_info").html('<strong>' + currentPage + '</strong> / ' + totalPage + ' 페이지');
+											var count = $("#list").getGridParam('records');
+											if (count === 0 || count == null) {
+												$("#list").html("<div class='jq_empty'>조회 결과가 없습니다.</div>");
+											}
+										},
+										beforeSelectRow: function(rowid, e) {
+											var $myCheckbox = $(e.target).closest('label');
+											if ($myCheckbox.length === 0) {
+												return false;
+											} else {
+												return true;
+											}
+										},
                                         autowidth: true,
                                         multiselect:true,
 										multiselectWidth: 55,
@@ -569,7 +703,7 @@
                                         rowList: [10, 20, 30],
                                         sortname: 'id',
                                         sortorder: 'asc',
-                                    });
+                                    })
 
 									function buttonButton(cellvalue, options, rowObject) {
 										return `
@@ -608,11 +742,32 @@
                                         $("#list").jqGrid('setGridWidth', $("#list").parent().parent().parent().parent().parent().width());
                                     })
                                 });
-                                </script>
-							<div class="jq_table">
-								<table id="list"></table>
-                            	<div id="pager"></div>
-							</div>
+                                $(document).ready(function() {
+									$("#search_button").click(function () {
+										var searchField = $("#search_field").val();
+										var searchValue = $("#search_value").val();
+
+										var searchQuery = {};
+										searchQuery[searchField] = searchValue;
+
+										$("#list").jqGrid("setGridParam", {
+											postData: {
+												filters: JSON.stringify({
+													groupOp: "AND",
+													rules: [{ field: searchField, op: "cn", data: searchValue }],
+												}),
+											},
+											search: true,
+										}).trigger("reloadGrid");
+									});
+								});
+                                $(document).ready(function() {
+									$("#row_nums").change(function() {
+										var selectedNum = $(this).val();
+										$("#list").jqGrid('setGridParam', { rowNum: selectedNum }).trigger("reloadGrid");
+									});
+                                });
+                            </script>
 						</div>
 					</div>
 
