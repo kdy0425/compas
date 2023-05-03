@@ -163,8 +163,41 @@
 #layout .fc-day-top.fc-other-month{color:#c8c9ce;opacity: 1;}
 #layout .fc-day.fc-other-month{background-color: #f8f8fb;}
 #layout .fc-other-month .fc-day-number{color:#c8c9ce !important;}
+#layout .fc-scroller{overflow: visible !important;}
+.calendar_box{position:relative;}
+.event_tooltip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    bordeR: 1px solid #e9e9e9;
+    color:#222;
+    z-index: 10110;
+    pointer-events: none;
+    transform: translate(-50%, 0);
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    bottom: 30px;
+    left: 50%;
+    white-space:nowrap;text-align:left;
+}
+.event_tooltip .title{color: #222;
+    font-size: 14px;display:block;
+    margin-bottom: 8px;
+    padding-bottom: 8px;padding-right:10px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #222;
+    font-weight: 600;}
+.event_tooltip .date{line-height:22px;
+    display:block;padding-right:10px;
+    color: #87888e;
+    font-size: 12px;
+    font-weight: 400;
+}
 
-
+#layout .fc-day-grid-event .fc-content, .fc-icon,#layout  .fc-row.fc-rigid, .fc-time-grid-event{overflow:visible;}
+#layout .fc-day-grid .fc-row, #layout .fc-row .fc-bg{z-index:auto;}
+#layout .fc-basic-view .fc-body .fc-row:hover{z-index:100;}
 .list_search + .box_white{margin-top:20px;}
 .box_white + .list_search{margin-top:20px;}
 .list_search{display:flex;background-color: #fff;padding:40px 40px 40px 15px;border-radius:10px;box-shadow: 2px 4px 10px 0 rgba(52, 55, 70, 0.05);}

@@ -496,12 +496,6 @@
 											<table id="list2" class="jq_in_table"></table>
 										</div>
 										<script>
-											$('.tt_toggle_btn').click(function(){
-												$(this).toggleClass('active');
-												$(this).closest('.row').find('.bottom').toggle();
-												$("#list").jqGrid('setGridWidth', $("#list").parent().parent().parent().parent().parent().width());
-												$("#list2").jqGrid('setGridWidth', $("#list").parent().parent().parent().parent().parent().width());
-											})
 											$(document).ready(function() {
 												var jqdata = [
 												{item1:"2021년",item2:"ABC-2020-001",item3:"우리은행 RDMS 리뉴얼",item4:"2023.03.30",item5:"2023.03.30",item6:"5명",item7:"152,021,400원",item8:"0원",item9:"78,000,000원",status:[{title:"진행중", color: "blue", value:"100"},{title:"완료", color: "gray", value:"200"},{title:"지연", color: "brown", value:"200"},{title:"준비중", color: "green", value:"200"}]},
@@ -636,7 +630,7 @@
 										<div class="tt_cnt"><span>50,000,000</span></div>
 										<div class="tt_cnt"><span>50,000,000</span></div>
 									</div>
-									<div class="bottom">123</div>
+									<div class="bottom tt_empty">조회 결과가 없습니다</div>
 								</div>
 								<div class="row">
 									<div class="top">
@@ -645,7 +639,7 @@
 										<div class="tt_cnt"><span>50,000,000</span></div>
 										<div class="tt_cnt"><span>50,000,000</span></div>
 									</div>
-									<div class="bottom">123</div>
+									<div class="bottom tt_empty">조회 결과가 없습니다</div>
 								</div>
 								<div class="row">
 									<div class="top">
@@ -654,7 +648,7 @@
 										<div class="tt_cnt"><span>50,000,000</span></div>
 										<div class="tt_cnt"><span>50,000,000</span></div>
 									</div>
-									<div class="bottom">123</div>
+									<div class="bottom tt_empty">조회 결과가 없습니다</div>
 								</div>
 							</div>
                         </div>
@@ -672,7 +666,13 @@
 	</div>
 </div>
 <script src="../../assets/js/common.js"></script>
-
-
+<script>
+$('.tt_toggle_btn').click(function(){
+	$(this).toggleClass('active');
+	$(this).closest('.row').find('.bottom').toggle();
+	$("#list").jqGrid('setGridWidth', $("#list").parent().parent().parent().parent().parent().width());
+	$("#list2").jqGrid('setGridWidth', $("#list").parent().parent().parent().parent().parent().width());
+})
+</script>
 </body>
 </html>

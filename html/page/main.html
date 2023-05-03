@@ -282,12 +282,12 @@
 
 				<!-- content -->
 				<div id="content" class="main_page">
-                    
                     <div class="main_box">
-                        <div id="calendar" style="height:100%;"></div>
+                        <div class="calendar_box">
+                            <div id="calendar" style="height:100%;"></div>
+                        </div>
                         <script>
                         $(document).ready(function() {
-                            // 캘린더를 초기화합니다.
                             $('#calendar').fullCalendar({
                                 eventLimit: true,
                                 height: '100%',
@@ -303,7 +303,6 @@
                                 }
                                 },
                                 titleFormat: 'YYYY.MM',
-                                // 이벤트 데이터입니다.
                                 events: [
                                     {
                                         title: '미팅',
@@ -351,8 +350,22 @@
                                         color: '#4785f1',
                                     },
                                 ],
+                                eventRender: function(event, element) {
+                                    const tooltipContent = `<span class="title">${event.title}</span><span class="date">${formatEventTime(event.start)}${event.end ? ` -<br/> ${formatEventTime(event.end)}` : ''}</span>`;
+                                    const tooltip = $('<div class="event_tooltip"></div>').html(tooltipContent);
+                                    element.append(tooltip);
+                                    element.on('mouseover', function() {
+                                        tooltip.show();
+                                    });
+                                    element.on('mouseout', function() {
+                                        tooltip.hide();
+                                    });
+                                }
                             });
                         });
+                        function formatEventTime(time) {
+                            return moment(time).format('YYYY-MM-DD HH:mm');
+                        }
                         </script>
                     </div>
 
