@@ -155,6 +155,7 @@ button{cursor:pointer;}
 .fs_18{font-size:18px !important;}
 
 .bold{font-weight:600;}
+.boldse{font-weight:500;}
 .icon{display:inline-block;vertical-align: middle;}
 .icon svg{display:block;}
 
@@ -215,15 +216,17 @@ h4{color:#222;font-weight:600;line-height:32px;font-size:24px;}
 .btn_global.type1:hover{background-color:#303eb5;}
 .btn_inline button,.btn_inline a{margin:2px 5px 2px 0;}
 .icon_inline .icon{display:inline-block;margin:2px 5px 2px 0;}
-
+.btn .icon svg,
+.btn .icon svg path{transition:all 0.2s;}
 .btn{border-radius:8px;color:#fff;text-align:center;border:0;}
 .btn.xl{font-size:15px;font-weight:500;padding:0 30px;min-width:98px;height:46px;line-height:46px;}
 .btn.lg{font-size:15px;font-weight:600;padding:0 20px;min-width:102px;height:42px;line-height:42px;}
-.btn.md{font-size:14px;font-weight:500;padding:0 20px;min-width:100px;height:38px;line-height:38px;}
+.btn.md{font-size:14px;font-weight:500;padding:0 14px;min-width:100px;height:38px;line-height:38px;}
 .btn.sm{font-size:14px;font-weight:500;padding:0 15px;min-width:72px;height:34px;line-height:34px;}
 .btn.xs{font-size:13px;font-weight:500;padding:0 12px;min-width:72px;height:32px;line-height:32px;}
 .btn.xl .icon{margin-right:8px;}
 .btn.lg .icon{margin-right:8px;}
+.btn.md .icon{margin-right:8px;}
 .btn.xs .icon{margin-right:4px;}
 .btn.type1{background-color: #3c4de2;}
 .btn.type2{background-color: #272848;}
@@ -235,6 +238,7 @@ h4{color:#222;font-weight:600;line-height:32px;font-size:24px;}
 .btn.type1:hover{background-color: #303eb5;}
 .btn.type2:hover{background-color: #3c4de2;}
 .btn.type3:hover{color: #3c4de2;}
+.btn.type3:hover svg path{stroke:#3c4de2 !important;}
 .btn.type4:hover{background-color: #3c4de2;color:#fff;}
 .btn.type4:hover svg path{stroke:rgb(255,255,255) !important;}
 .btn.type5:hover{background-color: #f54e41;color:#fff;}
@@ -269,7 +273,7 @@ a.text_btn,.text_btn{color:#3c4de2;font-size:15px;font-weight:500;border:0;backg
 .btn_search{display:inline-block;border:1px solid #272848;width:34px;height:34px;border-radius:8px;background-color:#272848;padding:6px;transition:all 0.2s;}
 .btn_search:hover {background-color: #3c4de2;border:1px solid #3c4de2;}
 .btn_search:disabled,.btn_search.disabled{background-color: #ccc;border:1px solid #ccc;}
-
+.btn_search.icon_lg{width:38px;height:38px;}
 .btn_close{display:inline-block;border:1px solid #e9e9e9;width:34px;height:34px;border-radius:8px;background-color:#fff;transition:all 0.2s;}
 .btn_close .icon{margin-top:-1px;margin-lefT:-1px;}
 .btn_close svg,.btn_close path{transition:all 0.2s;}
@@ -366,96 +370,7 @@ a.text_btn,.text_btn{color:#3c4de2;font-size:15px;font-weight:500;border:0;backg
 .tap_favorite.active .icon svg path{stroke: #dc9b18 !important;fill: #dc9b18 !important;}
 
 .loading_layer{position:fixed;lefT:0;top:0;width:100%;height:100%;z-index:9999;background-color:rgba(255,255,255,.6);}
-.loading_layer .loader{position:absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
-.loader {
-  position: relative;
-  width: 36px;
-  height: 36px;
-  margin: 0 auto;
-}
-
-.loader .dot {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  opacity:0.4;
-  background-color: #3c4de2;
-  animation: fade 2s infinite; 
-}
-
-.loader .dot:nth-child(1) {
-  top: 0;
-  left: 50%;
-  margin-left:-3.5px;
-  animation-delay: 0s;
-}
-
-.loader .dot:nth-child(2) {
-  top: 20%;
-  left: 80%;
-  margin-left:-3.5px;
-  margin-top:-3.5px;
-  animation-delay: 0.2s;
-}
-
-.loader .dot:nth-child(3) {
-  top: 50%;
-  right: 0;
-  margin-top:-3.5px;
-  animation-delay: 0.4s;
-}
-
-.loader .dot:nth-child(4) {
-  top: 80%;
-  left: 80%;
-  margin-left:-3.5px;
-  margin-top:-3.5px;
-  animation-delay: 0.6s;
-}
-
-.loader .dot:nth-child(5) {
-  bottom: 0;
-  left: 50%;
-  margin-left:-3.5px;
-  animation-delay: 0.8s;
-}
-
-.loader .dot:nth-child(6) {
-  top: 80%;
-  left: 20%;
-  margin-left:-3.5px;
-  margin-top:-3.5px;
-  animation-delay: 1s;
-}
-
-.loader .dot:nth-child(7) {
-  top: 50%;
-  left: 0;
-  margin-top:-3.5px;
-  animation-delay: 1.2s;
-}
-
-.loader .dot:nth-child(8) {
-  top: 20%;
-  left: 20%;
-  margin-left:-3.5px;
-  margin-top:-3.5px;
-  animation-delay: 1.4s;
-}
-
-.loader .dot:nth-child(9) {
-  top: 0;
-  left: 50%;
-  margin-left:-3.5px;
-  animation-delay: 1.6s;
-}
-
-@keyframes fade {
-  0% {opacity: 0.4;}
-  50% {opacity: 1;}
-  100% {opacity: 0.4;}
-}
+.loading_layer svg{position:absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
 
 input[type="text"],
 input[type="password"],
@@ -780,6 +695,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .dialogue .dialogue_item.error{background-color: #ff2626;}
 .dialogue .dialogue_item + .dialogue_item{margin-top:10px;}
 
+.jq_table + .jq_table{margin-top:20px;}
 .jq_table{border-top:1px solid #d8dbe5;position:relative;}
 .jq_table .ui-jqgrid .ui-jqgrid-hbox{padding-right:0;}
 .jq_table .ui-widget.ui-widget-content{width:100% !important;box-shadow:0 0 0 0;padding:0;border:0;}
@@ -803,7 +719,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .jq_table  .ui-jqgrid .ui-jqgrid-htable,.ui-jqgrid .ui-jqgrid-btable{width: 100% !important;}
 .jq_table .ui-jqgrid .ui-jqgrid-htable thead th{padding:10px 15px;border-bottom: 1px solid #d8dbe5;text-align: center;vertical-align: middle;background-color: #f4f6fc;color:#808aaa;font-size:14px;font-weight:500;height: 46px;border-radius:0 !important}
 .jq_table .ui-jqgrid .ui-jqgrid-htable tbody tr{}
-.jq_table .ui-jqgrid tr.jqgrow td{height:65px;vertical-align: middle;text-align: center;background-color: #fff;color:#222;font-size:14px;bordeR:0;border-bottom:1px solid #e9e9e9;line-height:normal;}
+.jq_table .ui-jqgrid tr.jqgrow td{height:65px;vertical-align: middle;text-align: center;word-break: break-all;background-color: #fff;color:#222;font-size:14px;bordeR:0;border-bottom:1px solid #e9e9e9;line-height:normal;}
 .jq_table .ui-state-highlight, .jq_table .ui-widget-content .ui-state-highlight, .jq_table .ui-widget-header .ui-state-highlight{display:table-row;line-height:normal;}
 .jq_table .ui-jqgrid tr.jqgrow td{white-space: normal;padding:10px 15px;line-height:22px;}
 .jq_table .ui-jqgrid .ui-jqgrid-bdiv{height: auto !important;}

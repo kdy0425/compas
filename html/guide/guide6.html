@@ -608,7 +608,7 @@
 							</div>
 							<script>
                                 $(document).ready(function() {
-                                    var mydata = [
+                                    var jqdata = [
                                     {no:"1",item1:"링크있는 제목 좌측정렬 타입",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
 									{no:"2",item1:"제목 정렬 게시글 게시글",item2:"게시글 11 내용 22",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.jpg", type: "photo", url:"javascript:;"} ,button:"file"},
 									{no:"3",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
@@ -637,10 +637,9 @@
 									{no:"26",item1:"COMPAS 제목 게시글",item2:"게시글 33 내용 44",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬 타입",item5:"2023.01.01",file:{name:"filename.zip", type: "file", url:"javascript:;"} ,button:"file"},
                                     {no:"27",item1:"링크있는 제목 좌측정렬",item2:"링크없는 텍스트 타입",item3:"링크없는 텍스트 타입",item4:"링크있는 제목 중앙정렬",item5:"2023.01.01",file:{name:"filename.pdf", type: "file", url:"javascript:;"} ,button:"file"},
                                     ];
-                                
                                     $("#list").jqGrid({
                                         datatype: "local",
-                                        data: mydata,
+                                        data: jqdata,
                                         colNames:['No.', '정렬1', '정렬2','정렬3','항목1','항목2', '첨부파일', '버튼타입', '편집'],
                                         colModel:[
 											{name:'no', index:'no', width:80, align: "center" ,sortable:false ,cellattr: function() { return ' title=""'; }},
