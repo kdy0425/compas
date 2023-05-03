@@ -118,12 +118,11 @@
 
 .fc-center h2{position:absolute;left:30px;top:3px;color:#222;font-size:16px;font-weight:700;width:132px;text-align:center;line-height:31px;height:34px;}
 .fc .fc-toolbar .fc-today-button{position:absolute;left:198px;top:0;width:66px;height:34px;border:1px solid #e9e9e9;background-color:#fff;background-image:none;color:#222;opacity:1;border-radius:8px;font-size:14px;font-weight:500;margin:0;text-shadow:none;box-shadow:none;}
-.fc-basic-view .fc-body .fc-row{height:92px;}
-.fc-scroller{height:552px !important}
-.fc-scroller{height:552px !important}
-.fc-basicWeek-view .fc-body .fc-row{height:552px !important}
+.fc-month-view .fc-body .fc-row{height:92px !important;}
+.fc-scroller{height:540px !important}
+.fc-week .fc-body .fc-row{height:540px !important}
 .fc-basicWeek-view td.fc-today:before{display:none;}
-.fc-basicDay-view .fc-body .fc-row{height:552px !important}
+.fc-basicDay-view .fc-body .fc-row{height:540px !important}
 .fc-basicDay-view td.fc-today:before{display:none;}
 
 #layout .fc-right{margin-bottom:20px;}
@@ -165,6 +164,8 @@
 #layout .fc-other-month .fc-day-number{color:#c8c9ce !important;}
 #layout .fc-scroller{overflow: visible !important;}
 .calendar_box{position:relative;}
+.fc-day-grid-container{height:541px !important;}
+.fc-basicWeek-view .fc-widget-content{height:541px !important;}
 .event_tooltip {
     display: none;
     position: absolute;
